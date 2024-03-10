@@ -1,4 +1,4 @@
-vim.o.termguicolors = true
+-- vim.o.termguicolors = true
 require("plugin_configs.others")
 require("plugin_configs.lualine")
 require("plugin_configs.tsitter")
@@ -12,6 +12,7 @@ require("plugin_configs.which-key")
 
 -- themes
 
+-- require("plugin_configs.catppuccin")
 -- require("plugin_configs.material")
 -- require("plugin_configs.nightfox")
 -- require("plugin_configs.kanagawa")
@@ -19,5 +20,6 @@ require("plugin_configs.which-key")
 -- require("plugin_configs.nord")
 -- require("plugin_configs.onenord")
 -- require("plugin_configs.poimandres")
-require("plugin_configs.everforest")
+-- require("plugin_configs.everforest")
 -- require("plugin_configs.gruvbox")
+-- vim.cmd.colorscheme("rose-pine-moon")

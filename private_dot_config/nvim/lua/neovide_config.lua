@@ -1,6 +1,6 @@
 if vim.g.neovide then
 --    vim.o.guifont = "NotoMono Nerd Font:h16"
-    vim.o.guifont = "Iosevka Nerd Font:h14"
+    vim.o.guifont = "0xProto Nerd Font Mono:h16"
 
 
 --    vim.g.neovide_fullscreen = true

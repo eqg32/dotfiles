@@ -1,4 +1,4 @@
 require("rose-pine").setup({
-    variant = "main"
+    variant = "moon"
 })
 vim.cmd.colorscheme("rose-pine")

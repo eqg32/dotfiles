@@ -21,6 +21,7 @@ end
 bootstrap_paq {
     -- themes
     "sainnhe/everforest",
+    {"catppuccin/nvim", as = "catppuccin"},
     'shaunsingh/nord.nvim',
     'olivercederborg/poimandres.nvim',
     {'rose-pine/neovim', as = "rose-pine"},

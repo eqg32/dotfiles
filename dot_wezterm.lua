@@ -5,8 +5,7 @@ local wezterm = require("wezterm")
 local config = {
 
     -- colour related
-    color_scheme = "Everforest Dark (Gogh)",
-    -- color_scheme = "Gruvbox Material (Gogh)",
+    color_scheme = "rose-pine-moon",
 
     -- font related
     font = wezterm.font "0xProto Nerd Font Mono",
