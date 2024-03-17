@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d1306fcf15b416c55676dc62e7ff4801873c2b9184309b1a1f63a48aae972873"
+            "sha256": "adb36c8602d3df7a2ea6b0e83db7bc8a1780fa9990f593ee324b2eda456984ce"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -26,6 +26,15 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==1.6.1"
+        },
+        "catppuccin": {
+            "hashes": [
+                "sha256:477193cb4d8787e398b58a949a98c002ba914826500287f7383c91844e18ff48",
+                "sha256:e85abc8fa302bff38d1c6b6c6610d147b7a72f5d4098d0580a35d19a47765242"
+            ],
+            "index": "pypi",
+            "markers": "python_full_version >= '3.8.0' and python_full_version < '4.0.0'",
+            "version": "==2.1.0"
         },
         "cffi": {
             "hashes": [
@@ -91,14 +100,6 @@
                 "sha256:e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"
             ],
             "version": "==2.21"
-        },
-        "pywal": {
-            "hashes": [
-                "sha256:efeab992c2702c7e07529ac9757425862ea1796a6fc0331148bc45a8675230b7"
-            ],
-            "index": "pypi",
-            "markers": "python_version >= '3.5'",
-            "version": "==3.3.0"
         },
         "qtile": {
             "hashes": [

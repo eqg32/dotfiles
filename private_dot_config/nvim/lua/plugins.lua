@@ -34,7 +34,6 @@ bootstrap_paq {
     "anuvyklack/windows.nvim",
     "anuvyklack/middleclass",
     "anuvyklack/animation.nvim",
-    "karb94/neoscroll.nvim",
     "edluffy/specs.nvim",
     "MunifTanjim/nui.nvim",
     "m4xshen/autoclose.nvim",
@@ -51,7 +50,6 @@ bootstrap_paq {
     'savq/paq-nvim',
     'nvim-lua/plenary.nvim',
     'mawkler/modicator.nvim',
-    "simrat39/rust-tools.nvim",
     'NvChad/nvim-colorizer.lua',
     'nvim-tree/nvim-tree.lua',
     'numToStr/Comment.nvim',
@@ -60,7 +58,6 @@ bootstrap_paq {
     'raimondi/delimitmate',
     'akinsho/bufferline.nvim',
     'nvim-tree/nvim-web-devicons',
-    -- 'akinsho/toggleterm.nvim',
     'ryanoasis/vim-devicons',
     'ap/vim-css-color',
     'lukas-reineke/indent-blankline.nvim',
@@ -78,7 +75,6 @@ bootstrap_paq {
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-vsnip',
     'hrsh7th/vim-vsnip',
-    -- 'is0n/jaq-nvim',
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim'
 }

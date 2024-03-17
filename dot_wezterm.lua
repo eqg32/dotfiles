@@ -5,7 +5,7 @@ local wezterm = require("wezterm")
 local config = {
 
     -- colour related
-    color_scheme = "rose-pine-moon",
+    color_scheme = "Catppuccin Frappe",
 
     -- font related
     font = wezterm.font "0xProto Nerd Font Mono",
