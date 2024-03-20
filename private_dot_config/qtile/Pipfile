@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 qtile = "*"
 catppuccin = "*"
+qtile-extras = "*"
 
 [dev-packages]
 
