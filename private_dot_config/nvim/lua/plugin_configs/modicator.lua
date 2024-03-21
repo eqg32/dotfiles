@@ -1,1 +1,1 @@
-require('modicator').setup()
+require("modicator").setup()
