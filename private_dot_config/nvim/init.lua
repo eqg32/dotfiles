@@ -1,6 +1,6 @@
 require("plugins")
+require("settings")
 require("plugin_configs")
 require("keymappings")
-require("settings")
 require("neovide_config")
 require("local_plugins")
