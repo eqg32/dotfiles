@@ -5,11 +5,12 @@ local wezterm = require("wezterm")
 local config = {
 
     -- colour related
-    color_scheme = "Catppuccin Frappe",
+    color_scheme_dirs = { "~/.config/wezterm/colors" },
+    color_scheme = "catppuccin-frappe",
 
     -- font related
     font = wezterm.font "0xProto Nerd Font Mono",
-    font_size = 16.0,
+    font_size = 14.0,
 
     -- window related
     enable_tab_bar = false,
