@@ -3,7 +3,7 @@ from core.modules.bars import topBar
 from catppuccin import PALETTE
 import os
 
-colours = PALETTE.frappe.colors
+colours = PALETTE.macchiato.colors
 
 groups = [config.Group(workspace, label="") for workspace in "123qwe"]
 
@@ -44,7 +44,7 @@ screens = [
         # bars
         top=topBar,
         # wallpaper
-        wallpaper=os.path.expanduser("~/.config/qtile/core/wallpapers/wallpaper.png"),
+        wallpaper=os.path.expanduser("~/.config/qtile/core/wallpapers/tux.svg"),
         wallpaper_mode="fill",
     )
 ]

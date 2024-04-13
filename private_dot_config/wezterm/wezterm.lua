@@ -5,8 +5,7 @@ local wezterm = require("wezterm")
 local config = {
 
     -- colour related
-    color_scheme_dirs = { "~/.config/wezterm/colors" },
-    color_scheme = "catppuccin-frappe",
+    color_scheme = "Catppuccin Macchiato",
 
     -- font related
     font = wezterm.font "0xProto Nerd Font Mono",

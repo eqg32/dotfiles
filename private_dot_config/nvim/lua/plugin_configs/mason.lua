@@ -1,4 +1,4 @@
-local lsp_list = { "pyright", "lua_ls", "clangd", "gopls" }
+local lsp_list = { "pylsp", "lua_ls", "clangd", "gopls" }
 require("mason").setup()
 require("mason-lspconfig").setup({
 	ensure_installed = lsp_list,

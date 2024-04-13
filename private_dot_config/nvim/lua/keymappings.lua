@@ -1,8 +1,9 @@
 -- various mappings
 
 vim.keymap.set({ "n", "v", "i" }, "<F1>", "<cmd>w<cr>")
-vim.keymap.set("n", "<M-w>", "<C-w><C-w>")
+vim.keymap.set("n", " w", "<C-w><C-w>")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("i", "jk", "<Esc>")
 
 -- arrows mappings
 
@@ -15,6 +16,6 @@ vim.keymap.set({ "n", "v", "i" }, "<PageDown>", "<Ignore>")
 
 -- plugin mappings
 
-vim.keymap.set({ "n", "v" }, "<M-f>", "<cmd>TerminalToggle<cr>")
-vim.keymap.set({ "n", "v" }, "<M-g>", "<cmd>NvimTreeToggle<cr>")
-vim.keymap.set({ "n", "v" }, "<M-r>", "<cmd>QuickRun<cr>")
+vim.keymap.set({ "n", "v" }, " t", "<cmd>TerminalToggle<cr>")
+vim.keymap.set({ "n", "v" }, " f", "<cmd>NvimTreeToggle<cr>")
+vim.keymap.set({ "n", "v" }, " r", "<cmd>QuickRun<cr>")

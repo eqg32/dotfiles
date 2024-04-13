@@ -3,7 +3,7 @@ from qtile_extras import widget
 from libqtile.lazy import lazy
 from catppuccin.palette import PALETTE
 
-colours = PALETTE.frappe.colors
+colours = PALETTE.macchiato.colors
 
 widget_defaults = {
     "background": colours.base.hex,
@@ -34,39 +34,6 @@ topWidgets = [
         background=colours.blue.hex,
     ),
     widget.Spacer(16),
-    widget.WidgetBox(
-        widgets=[
-            widget.TextBox(
-                text="",
-                mouse_callbacks={"Button1": lazy.spawn("wezterm")},
-                foreground=colours.base.hex,
-                background=colours.teal.hex,
-            ),
-            widget.TextBox(
-                text="",
-                mouse_callbacks={"Button1": lazy.spawn("zathura")},
-                foreground=colours.base.hex,
-                background=colours.teal.hex,
-            ),
-            widget.TextBox(
-                text="󰈹",
-                mouse_callbacks={"Button1": lazy.spawn("librewolf")},
-                foreground=colours.base.hex,
-                background=colours.teal.hex,
-            ),
-            widget.TextBox(
-                text="󰍳",
-                mouse_callbacks={"Button1": lazy.spawn("prismlauncher")},
-                foreground=colours.base.hex,
-                background=colours.teal.hex,
-            ),
-        ],
-        text_closed=" apps",
-        text_open=" apps:",
-        foreground=colours.base.hex,
-        background=colours.teal.hex,
-    ),
-    widget.Spacer(16),
     widget.Prompt(
         prompt=" ",
         cursor=False,
@@ -86,7 +53,7 @@ topWidgets = [
         toggle=False,
         highlight_method="text",
         urgent_highlight_method="text",
-        active=colours.overlay2.hex,
+        active=colours.overlay1.hex,
         inactive=colours.surface2.hex,
         this_current_screen_border=colours.blue.hex,
         this_screen_border=colours.blue.hex,
