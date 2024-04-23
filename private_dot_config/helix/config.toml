@@ -1,37 +1,38 @@
-theme = "catppuccin_macchiato"
+theme                  = "catppuccin_macchiato"
 
 [editor]
-line-number = "relative"
-cursorline = true
-auto-save = true
+line-number            = "relative"
+cursorline             = true
+auto-format            = true
 completion-trigger-len = 1
-bufferline = "multiple"
-color-modes = true
+bufferline             = "multiple"
+color-modes            = true
+true-color             = true
 
 [editor.statusline]
-left = ["mode", "file-name", "spinner"]
-center = ["position", "position-percentage"]
-right = [
+left                   = ["mode", "file-name", "spinner"]
+center                 = ["position", "position-percentage"]
+right                  = [
   "version-control",
   "diagnostics",
   "selections",
   "register",
   "file-encoding",
 ]
-mode.normal = "normal"
-mode.insert = "insert"
-mode.select = "select"
+mode.normal            = "normal"
+mode.insert            = "insert"
+mode.select            = "select"
 
 [editor.cursor-shape]
-insert = "bar"
-normal = "block"
-select = "block"
+insert                 = "bar"
+normal                 = "block"
+select                 = "block"
 
 [editor.indent-guides]
-render = true
+render                 = true
 
 [keys.normal]
-F1 = ":w"
+F1                     = ":w"
 
 [keys.insert]
-j = { k = "normal_mode" }
+j                      = { k = "normal_mode" }

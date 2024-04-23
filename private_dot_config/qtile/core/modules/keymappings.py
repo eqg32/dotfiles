@@ -1,16 +1,24 @@
-from libqtile.config import Key, Click, Drag
+import os
+
+import tomllib
+from libqtile.config import Click, Drag, Key
 from libqtile.lazy import lazy
+
 from core.modules.environment import groups
+
+# getting options
+with open(os.path.expanduser("~/projects/qtile/options.toml"), "rb") as file:
+    options = tomllib.load(file)
 
 
 # definitions
-mod = "mod4"
-terminal = "wezterm"
+mod = options["keymappings"]["mod"]
+terminal = options["general"]["terminal"]
 
-up = "k"
-down = "j"
-right = "l"
-left = "h"
+up = options["keymappings"]["up"]
+down = options["keymappings"]["down"]
+right = options["keymappings"]["right"]
+left = options["keymappings"]["left"]
 
 
 keys = [
@@ -19,7 +27,7 @@ keys = [
     Key([mod], down, lazy.layout.down()),
     Key([mod], right, lazy.layout.right()),
     Key([mod], left, lazy.layout.left()),
-    Key([mod], "space", lazy.layout.next()),
+    Key([mod], "space", lazy.screen.next_group()),
     # window movement
     Key([mod, "shift"], up, lazy.layout.shuffle_up()),
     Key([mod, "shift"], down, lazy.layout.shuffle_down()),

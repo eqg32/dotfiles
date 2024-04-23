@@ -4,9 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-qtile = "*"
-catppuccin = "*"
 qtile-extras = "*"
+qtile = "*"
 
 [dev-packages]
 

@@ -1,0 +1,23 @@
+[general]
+terminal = "wezterm"
+groups   = "1234567890qweuiop"
+layouts  = ["monadtall", "floating"]
+wmname   = "qtile"
+
+[keyboard]
+layouts           = ["us", "ru"]
+displayes_layouts = { us = "us", ru = "ru" }
+
+[keymappings]
+mod   = "mod4"
+up    = "k"
+down  = "j"
+right = "l"
+left  = "h"
+
+[visuals]
+bar_position  = "bottom"
+theme         = "catppuccin"
+font          = "JetBrainsMono Nerd Font"
+corner_radius = 0
+wallpaper     = "~/.config/qtile/core/wallpapers/tux.svg"

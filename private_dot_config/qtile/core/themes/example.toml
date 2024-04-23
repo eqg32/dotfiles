@@ -1,0 +1,18 @@
+[palette0]
+background = ""
+foreground = ""
+active     = ""
+inactive   = ""
+focused    = ""
+unfocused  = ""
+alert      = ""
+
+[palette1]
+accent0 = ""
+accent1 = ""
+accent2 = ""
+accent3 = ""
+accent4 = ""
+accent5 = ""
+accent6 = ""
+accent7 = ""

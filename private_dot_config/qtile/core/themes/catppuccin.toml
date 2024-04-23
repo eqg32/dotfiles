@@ -1,0 +1,18 @@
+[palette0]
+background = "24273a"
+foreground = "cad3f5"
+active     = "8aadf4"
+inactive   = "a5adcb"
+focused    = "939ab7"
+unfocused  = "6e738d"
+alert      = "ed8796"
+
+[palette1]
+accent0 = "a6da95"
+accent1 = "8aadf4"
+accent2 = "b7bdf8"
+accent3 = "8aadf4"
+accent4 = "8bd5ca"
+accent5 = "ee99a0"
+accent6 = "b7bdf8"
+accent7 = "a6da95"
