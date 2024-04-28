@@ -26,6 +26,7 @@ local executable = vim.fn.expand("%:p")
 local to_change = false
 local commands = {
 	["python"] = "pipenv run python %s",
+	["fennel"] = "fennel %s",
 	["cpp"] = "gcc -lstdc++ %s && ./a.out && rm -rf a.out",
 	["lua"] = "lua %s",
 	["go"] = "go run %s",

@@ -33,9 +33,9 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"kylechui/nvim-surround",
+		"m4xshen/autoclose.nvim",
 		config = function()
-			require("nvim-surround").setup()
+			require("autoclose").setup()
 		end,
 	},
 	{
@@ -56,13 +56,28 @@ require("lazy").setup({
 	{
 		"kyazdani42/nvim-tree.lua",
 		config = function()
-			vim.keymap.set({ "n", "v", "i" }, "<M-f>", "<cmd>NvimTreeToggle<cr>")
+			require("nvim-tree").setup({
+				view = {
+					side = "right",
+					float = {
+						enable = true,
+						open_win_config = {
+							border = "shadow",
+							col = math.pow(2, 16),
+						},
+					},
+				},
+			})
+			vim.keymap.set("n", "<M-f>", "<cmd>NvimTreeToggle<cr>")
 		end,
-		opts = {
-			view = {
-				side = "right",
-			},
+	},
+	{
+		"2kabhishek/nerdy.nvim",
+		dependencies = {
+			"stevearc/dressing.nvim",
+			"nvim-telescope/telescope.nvim",
 		},
+		cmd = "Nerdy",
 	},
 	{
 		"folke/neodev.nvim",
@@ -72,6 +87,38 @@ require("lazy").setup({
 	{
 		"karb94/neoscroll.nvim",
 		opts = { hide_cursor = false },
+	},
+	{
+		"NeogitOrg/neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		config = true,
+	},
+	{
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").create_default_mappings()
+		end,
+		priority = 1000,
+	},
+	{
+		"ggandor/flit.nvim",
+		config = function()
+			require("flit").setup({})
+		end,
+	},
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+	},
+	{
+		"ray-x/lsp_signature.nvim",
+		opts = { hint_prefix = " ", handler_opts = { border = "shadow" } }
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -84,13 +131,6 @@ require("lazy").setup({
 	{
 		"numToStr/Comment.nvim",
 		config = true,
-	},
-	{
-		"phaazon/hop.nvim",
-		config = function()
-			require("hop").setup()
-			vim.keymap.set({ "n", "v", "i" }, "<M-h>", "<Cmd>HopWord<CR>")
-		end,
 	},
 	{
 		"stevearc/oil.nvim",

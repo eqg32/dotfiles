@@ -9,8 +9,8 @@ return {
 			ensure_installed = lsp_list,
 		})
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
-		for lsp = 1, #lsp_list do
-			require("lspconfig")[lsp_list[lsp]].setup({
+		for _, lsp in ipairs(lsp_list) do
+			require("lspconfig")[lsp].setup({
 				capabilities = capabilities,
 			})
 		end
