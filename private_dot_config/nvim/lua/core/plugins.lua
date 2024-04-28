@@ -118,7 +118,7 @@ require("lazy").setup({
 	},
 	{
 		"ray-x/lsp_signature.nvim",
-		opts = { hint_prefix = " ", handler_opts = { border = "shadow" } }
+		opts = { hint_prefix = " ", handler_opts = { border = "shadow" } },
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -138,5 +138,34 @@ require("lazy").setup({
 	},
 	{
 		"MunifTanjim/nui.nvim",
+	},
+	{
+		"Olical/conjure",
+		ft = { "fennel" },
+		dependencies = {
+			{
+				"PaterJason/cmp-conjure",
+				config = function()
+					local cmp = require("cmp")
+					local config = cmp.get_config()
+					table.insert(config.sources, {
+						name = "buffer",
+						option = {
+							sources = {
+								{ name = "conjure" },
+							},
+						},
+					})
+					cmp.setup(config)
+				end,
+			},
+		},
+		config = function(_, opts)
+			require("conjure.main").main()
+			require("conjure.mapping")["on-filetype"]()
+		end,
+		init = function()
+			vim.g["conjure#debug"] = true
+		end,
 	},
 }, { install = { colorscheme = { "catppuccin-macchiato" } } })
