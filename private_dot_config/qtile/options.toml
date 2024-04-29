@@ -19,5 +19,4 @@ left  = "h"
 bar_position  = "bottom"
 theme         = "catppuccin"
 font          = "JetBrainsMono Nerd Font"
-corner_radius = 0
 wallpaper     = "~/.config/qtile/core/wallpapers/tux.svg"

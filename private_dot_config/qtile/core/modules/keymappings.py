@@ -7,7 +7,7 @@ from libqtile.lazy import lazy
 from core.modules.environment import groups
 
 # getting options
-with open(os.path.expanduser("~/projects/qtile/options.toml"), "rb") as file:
+with open(os.path.expanduser("~/.config/qtile/options.toml"), "rb") as file:
     options = tomllib.load(file)
 
 
