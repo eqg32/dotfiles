@@ -18,14 +18,6 @@ require("lazy").setup({
 	require("core.pluginSettings.lualine"),
 	require("core.pluginSettings.treesitter"),
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		config = function()
-			vim.cmd.colorscheme("catppuccin-macchiato")
-		end,
-	},
-	{
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
 			local ibl = require("ibl")
@@ -121,51 +113,19 @@ require("lazy").setup({
 		opts = { hint_prefix = " ", handler_opts = { border = "shadow" } },
 	},
 	{
-		"windwp/nvim-autopairs",
-		config = true,
-	},
-	{
-		"smjonas/inc-rename.nvim",
-		config = true,
-	},
-	{
-		"numToStr/Comment.nvim",
-		config = true,
-	},
-	{
-		"stevearc/oil.nvim",
-		config = true,
-	},
-	{
-		"MunifTanjim/nui.nvim",
-	},
-	{
-		"Olical/conjure",
-		ft = { "fennel" },
-		dependencies = {
-			{
-				"PaterJason/cmp-conjure",
-				config = function()
-					local cmp = require("cmp")
-					local config = cmp.get_config()
-					table.insert(config.sources, {
-						name = "buffer",
-						option = {
-							sources = {
-								{ name = "conjure" },
-							},
-						},
-					})
-					cmp.setup(config)
-				end,
-			},
-		},
-		config = function(_, opts)
-			require("conjure.main").main()
-			require("conjure.mapping")["on-filetype"]()
-		end,
-		init = function()
-			vim.g["conjure#debug"] = true
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		config = function()
+			vim.cmd.colorscheme("catppuccin-macchiato")
 		end,
 	},
+	{ "rose-pine/neovim", name = "rose-pine" },
+	{ "abecodes/tabout.nvim", config = true, },
+	{ "windwp/nvim-autopairs", config = true, },
+	{ "smjonas/inc-rename.nvim", config = true, },
+	{ "numToStr/Comment.nvim", config = true, },
+	{ "stevearc/oil.nvim", config = true, },
+	{ "HiPhish/rainbow-delimiters.nvim", },
+	{ "MunifTanjim/nui.nvim", },
 }, { install = { colorscheme = { "catppuccin-macchiato" } } })

@@ -28,6 +28,7 @@ keys = [
     Key([mod], right, lazy.layout.right()),
     Key([mod], left, lazy.layout.left()),
     Key([mod], "space", lazy.screen.next_group()),
+    Key([mod], "tab", lazy.screen.prev_group()),
     # window movement
     Key([mod, "shift"], up, lazy.layout.shuffle_up()),
     Key([mod, "shift"], down, lazy.layout.shuffle_down()),

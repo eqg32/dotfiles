@@ -9,6 +9,7 @@ return {
 		"hrsh7th/vim-vsnip",
 		"onsails/lspkind.nvim",
 	},
+	priority = 1000,
 	config = function()
 		local cmp = require("cmp")
 		local lspkind = require("lspkind")
@@ -27,11 +28,11 @@ return {
 				documentation = cmp.config.window.bordered({ border = "shadow" }),
 			},
 			mapping = cmp.mapping.preset.insert({
-				["<S-Space>"] = cmp.mapping.confirm({ select = true }),
 				["<Tab>"] = cmp.mapping.select_next_item(),
 				["<C-u>"] = cmp.mapping.scroll_docs(-4),
 				["<C-d>"] = cmp.mapping.scroll_docs(4),
 				["<C-e>"] = cmp.mapping.abort(),
+				["<CR>"] = cmp.mapping.confirm({ select = true }),
 			}),
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
