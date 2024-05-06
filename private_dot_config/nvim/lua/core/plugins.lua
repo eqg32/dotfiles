@@ -17,6 +17,7 @@ require("lazy").setup({
 	require("core.pluginSettings.nvim-cmp"),
 	require("core.pluginSettings.lualine"),
 	require("core.pluginSettings.treesitter"),
+	require("core.pluginSettings.hop"),
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
@@ -90,19 +91,6 @@ require("lazy").setup({
 		config = true,
 	},
 	{
-		"ggandor/leap.nvim",
-		config = function()
-			require("leap").create_default_mappings()
-		end,
-		priority = 1000,
-	},
-	{
-		"ggandor/flit.nvim",
-		config = function()
-			require("flit").setup({})
-		end,
-	},
-	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
@@ -120,12 +108,16 @@ require("lazy").setup({
 			vim.cmd.colorscheme("catppuccin-macchiato")
 		end,
 	},
+	{
+		"max397574/better-escape.nvim",
+		-- opts = { mapping = { "jj", "jk", "ee" } },
+	},
 	{ "rose-pine/neovim", name = "rose-pine" },
-	{ "abecodes/tabout.nvim", config = true, },
-	{ "windwp/nvim-autopairs", config = true, },
-	{ "smjonas/inc-rename.nvim", config = true, },
-	{ "numToStr/Comment.nvim", config = true, },
-	{ "stevearc/oil.nvim", config = true, },
-	{ "HiPhish/rainbow-delimiters.nvim", },
-	{ "MunifTanjim/nui.nvim", },
+	{ "abecodes/tabout.nvim", config = true },
+	{ "windwp/nvim-autopairs", config = true },
+	{ "smjonas/inc-rename.nvim", config = true },
+	{ "numToStr/Comment.nvim", config = true },
+	{ "stevearc/oil.nvim", config = true },
+	{ "HiPhish/rainbow-delimiters.nvim" },
+	{ "MunifTanjim/nui.nvim" },
 }, { install = { colorscheme = { "catppuccin-macchiato" } } })
