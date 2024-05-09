@@ -1,0 +1,18 @@
+import = [ "~/.config/alacritty/catppuccin-macchiato.toml" ]
+
+[font]
+size = 14
+
+[font.normal]
+family = "0xProto Nerd Font"
+style = "regular"
+
+[cursor.style]
+blinking = "On"
+
+[mouse]
+hide_when_typing = true
+
+[window.padding]
+x = 16
+y = 16
