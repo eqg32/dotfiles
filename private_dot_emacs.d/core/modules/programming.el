@@ -1,3 +1,7 @@
+;; Local Variables:
+;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
+;; byte-compile-warnings: (not free-vars)
+;; End:
 (require 'use-package)
 
 (use-package company
@@ -19,11 +23,6 @@
   (setq company-show-quick-access 'right)
   (add-hook 'prog-mode-hook 'company-mode))
 
-(use-package tree-sitter
-  :config
-  (add-hook 'prog-mode-hook 'tree-sitter-hl-mode))
-(use-package tree-sitter-langs)
-
 (use-package rainbow-delimiters
   :config
   (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
@@ -44,9 +43,14 @@
   :config
   (add-hook 'prog-mode-hook #'global-flycheck-mode))
 
-(use-package elpy
-  :init
-  (elpy-enable))
+(use-package format-all
+  :hook (prog-mode . format-all-mode)
+  :config
+  (setq-default format-all-formatters
+		'(
+		  ("Go" (gofmt))
+		  ("Python" (black "-l" "79"))
+		  )))
 
 (use-package lua-mode)
 

@@ -1,3 +1,7 @@
+;; Local Variables:
+;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
+;; byte-compile-warnings: (not free-vars)
+;; End:
 ;; getting rid of autosaves and recentf
 (setq recentf-list nil)
 (setq recentf-filter-changer-current nil)

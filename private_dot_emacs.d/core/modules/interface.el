@@ -1,3 +1,7 @@
+;; Local Variables:
+;; flycheck-disabled-checkers: (emacs-lisp-checkdoc)
+;; byte-compile-warnings: (not free-vars)
+;; End:
 (require 'use-package)
 
 (use-package catppuccin-theme
@@ -7,6 +11,7 @@
 
 (use-package dashboard
   :config
+  (setq dashboard-startup-banner (expand-file-name "~/.emacs.d/core/modules/title.txt"))
   (dashboard-setup-startup-hook))
 
 (use-package sublimity-scroll
@@ -19,7 +24,6 @@
    sublimity-scroll-drift-length 0
    sublimity-scroll-vertical-frame-delay 0.01)
   (sublimity-mode t))
-
 
 (use-package ace-popup-menu
   :config
@@ -50,4 +54,9 @@
   :init
   (ivy-mode))
 
+(use-package mood-line
+  :config
+  (mood-line-mode))
+
 (use-package nerd-icons)
+(use-package all-the-icons)
