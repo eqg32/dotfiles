@@ -25,9 +25,9 @@
   use-package-always-ensure t
   use-package-verbose t)
 
-(load (expand-file-name "~/.emacs.d/core/modules/interface.el"))
-(load (expand-file-name "~/.emacs.d/core/modules/programming.el"))
-(load (expand-file-name "~/.emacs.d/core/modules/evil.el"))
+(load (expand-file-name "~/.emacs.d/core/packages_settings/interface.el"))
+(load (expand-file-name "~/.emacs.d/core/packages_settings/programming.el"))
+(load (expand-file-name "~/.emacs.d/core/packages_settings/evil.el"))
 
 (use-package exec-path-from-shell
   :config

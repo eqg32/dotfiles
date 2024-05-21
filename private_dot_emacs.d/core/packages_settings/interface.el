@@ -11,7 +11,7 @@
 
 (use-package dashboard
   :config
-  (setq dashboard-startup-banner (expand-file-name "~/.emacs.d/core/modules/title.txt"))
+  (setq dashboard-startup-banner (expand-file-name "~/.emacs.d/core/packages_settings/title.txt"))
   (dashboard-setup-startup-hook))
 
 (use-package sublimity-scroll
@@ -37,7 +37,7 @@
 
 (use-package neotree
   :config
-  (load (expand-file-name "~/.emacs.d/core/modules/evil.el"))
+  (load (expand-file-name "~/.emacs.d/core/packages_settings/evil.el"))
   (require 'evil)
   (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
   (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)

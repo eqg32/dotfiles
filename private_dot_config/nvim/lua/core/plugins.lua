@@ -17,7 +17,6 @@ require("lazy").setup({
 	require("core.pluginSettings.nvim-cmp"),
 	require("core.pluginSettings.lualine"),
 	require("core.pluginSettings.treesitter"),
-	require("core.pluginSettings.hop"),
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
@@ -67,7 +66,6 @@ require("lazy").setup({
 	{
 		"2kabhishek/nerdy.nvim",
 		dependencies = {
-			"stevearc/dressing.nvim",
 			"nvim-telescope/telescope.nvim",
 		},
 		cmd = "Nerdy",
@@ -101,6 +99,12 @@ require("lazy").setup({
 		opts = { hint_prefix = " ", handler_opts = { border = "shadow" } },
 	},
 	{
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").create_default_mappings()
+		end,
+	},
+	{
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,
@@ -109,9 +113,26 @@ require("lazy").setup({
 		end,
 	},
 	{
-		"max397574/better-escape.nvim",
-		-- opts = { mapping = { "jj", "jk", "ee" } },
+		"stevearc/conform.nvim",
+		config = function()
+			require("conform").setup({
+				formatters_by_ft = {
+					lua = { "stylua" },
+					python = { "black -l 79" },
+					go = { "gofmt" },
+				},
+				format_on_save = {
+					lsp_fallbacks = true,
+				},
+			})
+		end,
 	},
+	{
+		"max397574/better-escape.nvim",
+		opts = { mapping = { "jk", "je" } },
+	},
+	{ "stevearc/dressing.nvim", opts = {} },
+	{ "folke/which-key.nvim", opts = {} },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "abecodes/tabout.nvim", config = true },
 	{ "windwp/nvim-autopairs", config = true },
