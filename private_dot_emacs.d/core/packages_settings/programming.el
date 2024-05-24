@@ -52,6 +52,10 @@
 		  ("Python" (black "-l" "79"))
 		  )))
 
+(use-package tree-sitter
+  :hook (prog-mode . tree-sitter-hl-mode))
+(use-package tree-sitter-langs)
+
 (use-package lua-mode)
 
 (use-package go-mode)

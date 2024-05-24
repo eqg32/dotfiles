@@ -24,5 +24,5 @@
 
 ;; gui options
 (set-face-attribute 'default nil :font "Iosevka Nerd Font Mono" :height 160)
-;; (tool-bar-mode -1)
-;; (scroll-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)

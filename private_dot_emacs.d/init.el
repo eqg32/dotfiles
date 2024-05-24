@@ -12,7 +12,7 @@
  '(custom-safe-themes
    '("4df435d012a155e2f22e75b15b9f70bdf559f0305f3d7d9ea2297a89cf90e4b0" "f700bc979515153bef7a52ca46a62c0aa519950cc06d539df4f3d38828944a2c" default))
  '(package-selected-packages
-   '(solaire-mode lua-mode magit quickrun dirvish highlight-thing ivy undo-tree neotree evil-commentary tree-sitter-langs sublimity rainbow-delimiters key-chord highlight-indentation exec-path-from-shell evil-terminal-cursor-changer evil-collection doom-modeline dashboard company catppuccin-theme autothemer ace-popup-menu)))
+   '(tree-sitter solaire-mode lua-mode magit quickrun dirvish highlight-thing ivy undo-tree neotree evil-commentary tree-sitter-langs sublimity rainbow-delimiters key-chord highlight-indentation exec-path-from-shell evil-terminal-cursor-changer evil-collection doom-modeline dashboard company catppuccin-theme autothemer ace-popup-menu)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
