@@ -3,12 +3,7 @@
 ;; byte-compile-warnings: (not free-vars)
 ;; End:
 
-;; getting rid of autosaves and recentf
-(setq recentf-list nil)
-(setq recentf-filter-changer-current nil)
-(setq recentf-mode nil)
-(recentf-mode -1)
-
+;; getting rid of autosaves
 (setq auto-save-default nil)
 (auto-save-mode -1)
 
