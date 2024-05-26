@@ -8,6 +8,7 @@ return {
 		require("mason-lspconfig").setup({
 			ensure_installed = lsp_list,
 		})
+
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		for _, lsp in ipairs(lsp_list) do
 			require("lspconfig")[lsp].setup({

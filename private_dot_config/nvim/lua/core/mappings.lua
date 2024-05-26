@@ -17,8 +17,3 @@ vim.keymap.set({ "n", "v" }, "<Left>", "<Ignore>")
 vim.keymap.set({ "n", "v" }, "<Right>", "<Ignore>")
 vim.keymap.set({ "n", "v", "i" }, "<PageUp>", "<Ignore>")
 vim.keymap.set({ "n", "v", "i" }, "<PageDown>", "<Ignore>")
-
--- plugins
-
-vim.keymap.set({ "n", "v", "i" }, "<M-t>", "<cmd>TerminalToggle<cr>")
-vim.keymap.set({ "n", "v", "i" }, "<M-r>", "<cmd>QuickRun<cr>")

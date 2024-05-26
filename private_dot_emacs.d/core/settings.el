@@ -12,6 +12,7 @@
 ;; general options
 (setq display-line-numbers-type 'relative)
 (setq font-lock-maximum-decoration t)
+(setq mode-line-format nil)
 (setq-default major-mode 'text-mode)
 (global-display-line-numbers-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)

@@ -23,10 +23,6 @@ return {
 					vim.fn["vsnip#anonymous"](args.body)
 				end,
 			},
-			window = {
-				completion = cmp.config.window.bordered({ border = "shadow" }),
-				documentation = cmp.config.window.bordered({ border = "shadow" }),
-			},
 			mapping = cmp.mapping.preset.insert({
 				["<Tab>"] = cmp.mapping.select_next_item(),
 				["<C-u>"] = cmp.mapping.scroll_docs(-4),

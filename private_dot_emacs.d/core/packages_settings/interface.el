@@ -6,8 +6,12 @@
 
 (use-package catppuccin-theme
   :config
-  (setq catppuccin-flavor 'macchiato)
-  (load-theme 'catppuccin :no-confim))
+  (setq catppuccin-flavor 'macchiato))
+
+(use-package rose-pine-theme
+  :load-path "~/.emacs.d/core/local_packages/")
+
+(load-theme 'catppuccin :no-confim)
 
 (use-package dashboard
   :config
@@ -15,7 +19,7 @@
   (dashboard-setup-startup-hook))
 
 (use-package sublimity-scroll
-  :load-path "~/.emacs.d/core/plugins/")
+  :load-path "~/.emacs.d/core/local_packages/")
 
 (use-package sublimity
   :config
@@ -54,9 +58,12 @@
   :init
   (ivy-mode))
 
+(use-package telephone-line)
+
 (use-package mood-line
   :config
   (mood-line-mode))
 
+(use-package autothemer)
+;; (use-package all-the-icons)
 (use-package nerd-icons)
-(use-package all-the-icons)

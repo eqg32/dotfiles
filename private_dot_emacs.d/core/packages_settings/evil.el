@@ -20,11 +20,12 @@
     "gh" "0")
   (setq avy-highlight-first nil)
   (set-face-attribute 'avy-lead-face nil :background (face-attribute 'font-lock-string-face :foreground))
-  (set-face-attribute 'avy-lead-face-0 nil :background (face-attribute 'font-lock-function-name-face :foreground))
-  (set-face-attribute 'avy-lead-face-1 nil :background (face-attribute 'font-lock-builtin-face :foreground))
-  (set-face-attribute 'avy-lead-face-2 nil :background (face-attribute 'font-lock-operator-face :foreground))
+  (set-face-attribute 'avy-lead-face-0 nil :background (face-attribute 'font-lock-string-face :foreground))
+  (set-face-attribute 'avy-lead-face-1 nil :background (face-attribute 'font-lock-string-face :foreground))
+  (set-face-attribute 'avy-lead-face-2 nil :background (face-attribute 'font-lock-string-face :foreground))
   (define-key evil-normal-state-map (kbd "s") 'evil-avy-goto-char-2-below)
   (define-key evil-normal-state-map (kbd "S") 'evil-avy-goto-char-2-above)
+  (define-key evil-normal-state-map (kbd "M-w") 'evil-window-next)
   (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up))
 
 (use-package evil-collection
@@ -38,7 +39,7 @@
 (use-package key-chord
   :config
   (key-chord-mode t)
-  (setq key-chord-one-key-delay 0.3)
+  ;; (setq key-chord-one-key-delay 0.5)
   (key-chord-define evil-insert-state-map "je" 'evil-execute-in-normal-state)
   (key-chord-define evil-insert-state-map "jk" 'evil-normal-state))
 
