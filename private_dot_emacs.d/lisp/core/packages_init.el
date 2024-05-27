@@ -25,9 +25,9 @@
   use-package-always-ensure t
   use-package-verbose t)
 
-(load (expand-file-name "~/.emacs.d/lisp/packages_settings/interface.el"))
-(load (expand-file-name "~/.emacs.d/lisp/packages_settings/programming.el"))
-(load (expand-file-name "~/.emacs.d/lisp/packages_settings/editing.el"))
+(load "~/.emacs.d/lisp/packages_settings/interface.el")
+(load "~/.emacs.d/lisp/packages_settings/programming.el")
+(load "~/.emacs.d/lisp/packages_settings/editing.el")
 
 (use-package exec-path-from-shell
   :config

@@ -57,6 +57,10 @@
   :hook (prog-mode . tree-sitter-hl-mode))
 (use-package tree-sitter-langs)
 
+(use-package pyvenv
+  :load-path "~/.emacs.d/lisp/local_packages/"
+  :hook (python-mode . pyvenv-mode))
+
 (use-package lua-mode)
 
 (use-package go-mode)

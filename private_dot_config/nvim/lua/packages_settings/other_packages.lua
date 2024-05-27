@@ -138,4 +138,9 @@ return {
 			vim.g["conjure#filetype#fennel"] = "conjure.client.fennel.stdio"
 		end,
 	},
+	{
+		"linux-cultist/venv-selector.nvim",
+		dependencies = { "neovim/nvim-lspconfig", "nvim-telescope/telescope.nvim" },
+		config = true,
+	},
 }

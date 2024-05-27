@@ -11,13 +11,13 @@
 (use-package rose-pine-theme
   :load-path "~/.emacs.d/lisp/local_packages/")
 
-(add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/lisp/themes/everforest"))
+(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp/themes/everforest")
 
 (load-theme 'catppuccin :no-confim)
 
 (use-package dashboard
   :config
-  (setq dashboard-startup-banner (expand-file-name "~/.emacs.d/lisp/packages_settings/title.txt"))
+  (setq dashboard-startup-banner "~/.emacs.d/lisp/packages_settings/title.txt")
   (dashboard-setup-startup-hook))
 
 (use-package sublimity-scroll
@@ -43,7 +43,7 @@
 
 (use-package neotree
   :config
-  (load (expand-file-name "~/.emacs.d/lisp/packages_settings/editing.el"))
+  (load "~/.emacs.d/lisp/packages_settings/editing.el")
   (require 'evil)
   (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
   (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
