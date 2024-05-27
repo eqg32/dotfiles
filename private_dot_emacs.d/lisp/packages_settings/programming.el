@@ -28,7 +28,7 @@
   (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
 
 (use-package indent-bars
-  :load-path "~/.emacs.d/core/local_packages/"
+  :load-path "~/.emacs.d/lisp/local_packages/"
   :config
   (add-hook 'python-mode-hook 'indent-bars-mode)
   (add-hook 'go-mode-hook 'indent-bars-mode))
