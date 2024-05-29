@@ -6,7 +6,7 @@
 
 (use-package company
   :init
-  (company-tng-mode t)
+  (company-tng-mode)
   :config
 
   (setq *keys* '("C-n" "M-n" "C-p" "M-p" "RET" "TAB" "C-g" "C-h" "C-w"))
@@ -18,7 +18,7 @@
   (define-key company-active-map (kbd "TAB") #'company-select-next-or-abort)
   (define-key company-active-map (kbd "C-k") #'company-select-previous-or-abort)
 
-  (setq company-minimum-prefix-length 2)
+  (setq company-minimum-prefix-length 1)
   (setq company-selection-wrap-around t)
   (setq company-show-quick-access 'right)
   (add-hook 'prog-mode-hook 'company-mode))
@@ -71,4 +71,4 @@
 
 (use-package magit)
 
-(electric-pair-mode t)
+(electric-pair-mode)

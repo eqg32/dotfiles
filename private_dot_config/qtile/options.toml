@@ -1,6 +1,6 @@
 [general]
 terminal = "alacritty"
-groups   = "1234567890qweuiop"
+groups   = "1234567890qwetyuiop"
 layouts  = ["monadtall", "floating"]
 wmname   = "qtile"
 

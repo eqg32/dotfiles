@@ -29,11 +29,11 @@
    sublimity-scroll-weight 16
    sublimity-scroll-drift-length 0
    sublimity-scroll-vertical-frame-delay 0.01)
-  (sublimity-mode t))
+  (sublimity-mode))
 
 (use-package ace-popup-menu
   :config
-  (ace-popup-menu-mode t))
+  (ace-popup-menu-mode))
 
 (use-package which-key
   :init
@@ -54,6 +54,7 @@
   (evil-define-key 'normal neotree-mode-map (kbd "p") 'neotree-previous-line)
   (evil-define-key 'normal neotree-mode-map (kbd "A") 'neotree-stretch-toggle)
   (evil-define-key 'normal neotree-mode-map (kbd "H") 'neotree-hidden-file-toggle)
+  (setq neo-theme nil)
   (global-set-key (kbd "M-f") 'neotree-toggle))
 
 (use-package ivy

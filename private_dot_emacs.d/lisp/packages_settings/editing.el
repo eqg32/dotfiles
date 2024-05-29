@@ -13,7 +13,7 @@
   :init
   (setq evil-want-keybinding nil)
   (setq evil-undo-system 'undo-fu)
-  (evil-mode t)
+  (evil-mode)
   :config
   (evil-define-key 'normal 'global
     "gl" "$"
@@ -38,7 +38,7 @@
 
 (use-package evil-commentary
   :config
-  (evil-commentary-mode t))
+  (evil-commentary-mode))
 
 (use-package key-chord
   :config
