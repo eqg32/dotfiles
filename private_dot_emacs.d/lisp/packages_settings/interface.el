@@ -69,5 +69,6 @@
   :config
   (mood-line-mode))
 
+(use-package windresize)
 (use-package autothemer)
 (use-package nerd-icons)
