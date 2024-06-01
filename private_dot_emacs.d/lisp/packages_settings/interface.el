@@ -24,10 +24,10 @@
   :load-path "~/.emacs.d/lisp/local_packages/")
 
 (use-package sublimity
-  :config
+  :init
   (setq
-   sublimity-scroll-weight 16
-   sublimity-scroll-drift-length 0
+   sublimity-scroll-weight 12
+   sublimity-scroll-drift-length 4
    sublimity-scroll-vertical-frame-delay 0.01)
   (sublimity-mode))
 
@@ -40,6 +40,10 @@
   (which-key-mode)
   :config
   (setq which-key-popup-type 'minibuffer))
+
+(use-package solaire-mode
+  :init
+  (solaire-global-mode))
 
 (use-package neotree
   :config
@@ -57,9 +61,9 @@
   (setq neo-theme nil)
   (global-set-key (kbd "M-f") 'neotree-toggle))
 
-(use-package ivy
+(use-package selectrum
   :init
-  (ivy-mode))
+  (selectrum-mode))
 
 (use-package telephone-line)
 

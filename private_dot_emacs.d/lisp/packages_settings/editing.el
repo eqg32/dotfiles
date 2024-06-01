@@ -11,8 +11,8 @@
   (evil-terminal-cursor-changer-activate)
 (use-package evil
   :init
-  (setq evil-want-keybinding nil)
-  (setq evil-undo-system 'undo-fu)
+  (setq evil-want-keybinding nil
+	evil-undo-system 'undo-fu)
   (evil-mode)
   :config
   (evil-define-key 'normal 'global

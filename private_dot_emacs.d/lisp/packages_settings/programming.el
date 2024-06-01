@@ -18,9 +18,9 @@
   (define-key company-active-map (kbd "TAB") #'company-select-next-or-abort)
   (define-key company-active-map (kbd "C-k") #'company-select-previous-or-abort)
 
-  (setq company-minimum-prefix-length 1)
-  (setq company-selection-wrap-around t)
-  (setq company-show-quick-access 'right)
+  (setq company-minimum-prefix-length 1
+	company-selection-wrap-around t
+	company-show-quick-access 'right)
   (add-hook 'prog-mode-hook 'company-mode))
 
 (use-package rainbow-delimiters
