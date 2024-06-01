@@ -65,12 +65,9 @@
   :init
   (selectrum-mode))
 
-(use-package telephone-line)
-
 (use-package mood-line
   :config
   (mood-line-mode))
 
 (use-package autothemer)
-;; (use-package all-the-icons)
 (use-package nerd-icons)
