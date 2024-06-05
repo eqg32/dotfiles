@@ -5,8 +5,10 @@
 (require 'use-package)
 
 (use-package catppuccin-theme
-  :config
-  (setq catppuccin-flavor 'macchiato))
+  :init
+  (setq catppuccin-flavor 'macchiato
+	catppuccin-italic-blockquotes t
+	catppuccin-italic-comments t))
 
 (use-package rose-pine-theme
   :load-path "~/.emacs.d/lisp/local_packages/")
@@ -41,9 +43,9 @@
   :config
   (setq which-key-popup-type 'minibuffer))
 
-(use-package solaire-mode
-  :init
-  (solaire-global-mode))
+;; (use-package solaire-mode
+;;   :init
+;;   (solaire-global-mode))
 
 (use-package neotree
   :config
@@ -65,9 +67,15 @@
   :init
   (selectrum-mode))
 
-(use-package mood-line
+(use-package doom-modeline
   :config
-  (mood-line-mode))
+  (setq doom-modeline-icon nil)
+  (doom-modeline-mode))
+
+;; (use-package mood-line
+;;   :config
+;;   (setq mood-line-format mood-line-format-default-extended)
+;;   (mood-line-mode))
 
 (use-package windresize)
 (use-package autothemer)

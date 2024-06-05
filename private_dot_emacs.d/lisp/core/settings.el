@@ -6,13 +6,14 @@
 ;; getting rid of autosaves
 (setq auto-save-default nil)
 (auto-save-mode -1)
-
 (setq make-backup-files nil)
 
 ;; general options
-(setq display-line-numbers-type 'relative)
-(setq font-lock-maximum-decoration t)
-(setq mode-line-format nil)
+(setq display-line-numbers-type 'relative
+      font-lock-maximum-decoration t
+      mode-line-format nil
+      inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
 (setq-default major-mode 'text-mode)
 (global-display-line-numbers-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)

@@ -27,24 +27,6 @@ return {
 		config = true,
 	},
 	{
-		"kyazdani42/nvim-tree.lua",
-		config = function()
-			require("nvim-tree").setup({
-				view = {
-					side = "right",
-					float = {
-						enable = true,
-						open_win_config = {
-							border = "none",
-							col = math.pow(2, 16),
-						},
-					},
-				},
-			})
-			vim.keymap.set("n", "<M-f>", "<cmd>NvimTreeToggle<cr>")
-		end,
-	},
-	{
 		"karb94/neoscroll.nvim",
 		config = function()
 			if not vim.g.neovide then
@@ -84,6 +66,13 @@ return {
 		name = "catppuccin",
 		priority = 1000,
 		config = function()
+			require("catppuccin").setup({
+				default_integrations = true,
+				integrations = {
+					leap = true,
+					treesitter = true,
+				},
+			})
 			vim.cmd.colorscheme("catppuccin-macchiato")
 		end,
 	},
@@ -111,31 +100,6 @@ return {
 		config = function()
 			require("toggleterm").setup()
 			vim.keymap.set("n", "<M-d>", "<cmd>ToggleTerm<cr>")
-		end,
-	},
-	{
-		"Olical/conjure",
-		dependencies = {
-			{
-				"PaterJason/cmp-conjure",
-				config = function()
-					local cmp = require("cmp")
-					local cmp_config = cmp.get_config()
-					table.insert(cmp_config.sources, {
-						name = "buffer",
-						options = {
-							sources = {
-								{ name = "conjure" },
-							},
-						},
-					})
-					cmp.setup(cmp_config)
-				end,
-			},
-		},
-		config = function()
-			-- fennel
-			vim.g["conjure#filetype#fennel"] = "conjure.client.fennel.stdio"
 		end,
 	},
 	{

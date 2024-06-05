@@ -43,7 +43,7 @@
 (use-package key-chord
   :config
   (key-chord-mode t)
-  ;; (setq key-chord-one-key-delay 0.5)
+  (setq key-chord-one-key-delay 1)
   (key-chord-define evil-insert-state-map "je" 'evil-execute-in-normal-state)
   (key-chord-define evil-insert-state-map "jk" 'evil-normal-state))
 

@@ -4,10 +4,21 @@ return {
 	config = true,
 	opts = {
 		options = {
-			component_separators = { "", "" },
-			section_separators = { "", "" },
+			section_separators = { left = "", right = "" },
+			component_separators = "┃",
 		},
 		sections = {
+			lualine_b = {
+				function()
+					return vim.fn.getcwd()
+				end,
+				"branch",
+				"diff",
+			},
+			lualine_c = {
+				"filename",
+				"diagnostics",
+			},
 			lualine_x = { "filetype" },
 		},
 	},
