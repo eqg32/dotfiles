@@ -43,7 +43,7 @@ widgets = [
     ),
     widget.Spacer(16),
     widget.Memory(
-        format=" {MemUsed: .0f}{mm}",
+        format="{MemUsed: .0f}{mm}",
         foreground=theme["palette0"]["background"],
         background=theme["palette1"]["accent1"],
     ),
