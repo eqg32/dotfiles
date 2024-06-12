@@ -24,6 +24,7 @@
 
 (use-package dashboard
   :ensure t
+  :after meow
   :config
   (dashboard-setup-startup-hook))
 
