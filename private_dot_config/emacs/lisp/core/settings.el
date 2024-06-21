@@ -1,15 +1,18 @@
 ;; getting rid of autosaves
 (setq auto-save-default nil
       make-backup-files nil)
+
 (auto-save-mode -1)
 
 ;; general options
-(setq display-line-numbers-type 'relative
-      font-lock-maximum-decoration t
-      mode-line-format nil
-      native-comp-async-report-warnings-errors 'silent
-      inhibit-startup-message t
+(setq display-line-numbers-type 'relative)
+(setq font-lock-maximum-decoration t)
+(setq mode-line-format nil)
+(setq native-comp-async-report-warnings-errors 'silent)
+
+(setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
+
 (setq-default major-mode 'text-mode)
 (global-display-line-numbers-mode)
 (add-hook 'prog-mode-hook 'hl-line-mode)

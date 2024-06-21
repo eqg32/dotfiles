@@ -1,5 +1,6 @@
 (load-file "~/.config/emacs/lisp/packages_settings/other_packages.el")
 (load-file "~/.config/emacs/lisp/packages_settings/format-all.el")
+(load-file "~/.config/emacs/lisp/packages_settings/sublimity.el")
 (load-file "~/.config/emacs/lisp/packages_settings/company.el")
 (load-file "~/.config/emacs/lisp/packages_settings/meow.el")
 (load-file "~/.config/emacs/lisp/packages_settings/avy.el")
