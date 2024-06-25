@@ -1,7 +1,7 @@
 [general]
 terminal = "alacritty"
 groups   = "1234567890qwetyuiop"
-layouts  = ["monadtall", "floating"]
+layouts  = ["monadtall", "monadwide", "floating"]
 wmname   = "qtile"
 
 [keyboard]
@@ -16,6 +16,7 @@ right = "l"
 left  = "h"
 
 [visuals]
+margin        = 16
 bar_position  = "bottom"
 theme         = "catppuccin"
 font          = "JetBrainsMono Nerd Font"

@@ -22,35 +22,21 @@ with open(
 
 # defining layout default settings
 layout_defaults = {
-    "margin": 16,
+    "margin": options["visuals"]["margin"],
     "border_width": 2,
     "border_focus": theme["palette0"]["focused"],
     "border_normal": theme["palette0"]["unfocused"],
 }
 
 aliases = {
-    "bsp": layout.Bsp(**layout_defaults),
-    "columns": layout.Columns(**layout_defaults),
     "floating": layout.Floating(
         # border
         border_width=2,
         border_focus=theme["palette0"]["focused"],
         border_normal=theme["palette0"]["unfocused"],
     ),
-    "matrix": layout.Matrix(**layout_defaults),
-    "max": layout.Max(**layout_defaults),
     "monadtall": layout.MonadTall(**layout_defaults),
-    "monadthreecol": layout.MonadThreeCol(**layout_defaults),
-    "monadwidej": layout.MonadWide(**layout_defaults),
-    "ratiotile": layout.RatioTile(**layout_defaults),
-    "screensplit": layout.ScreenSplit(**layout_defaults),
-    "slice": layout.Slice(**layout_defaults),
-    "spiral": layout.Spiral(**layout_defaults),
-    "stack": layout.Stack(**layout_defaults),
-    "tile": layout.Tile(**layout_defaults),
-    "treetab": layout.TreeTab(**layout_defaults),
-    "verticaltile": layout.VerticalTile(**layout_defaults),
-    "zoomy": layout.Zoomy(**layout_defaults),
+    "monadwide": layout.MonadWide(**layout_defaults),
 }
 
 groups = [config.Group(group) for group in options["general"]["groups"]]

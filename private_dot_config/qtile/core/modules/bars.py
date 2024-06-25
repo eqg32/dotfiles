@@ -47,13 +47,7 @@ widgets = [
         foreground=theme["palette0"]["background"],
         background=theme["palette1"]["accent1"],
     ),
-    widget.Spacer(16),
-    widget.Prompt(
-        foreground=theme["palette1"]["accent2"],
-        cursor=False,
-        prompt=" ",
-    ),
-    widget.Spacer(),
+    widget.Spacer(12),
     widget.GroupBox(
         active=theme["palette1"]["accent3"],
         block_highlight_text_color=theme["palette0"]["background"],
@@ -61,12 +55,19 @@ widgets = [
         other_screen_border=theme["palette1"]["accent3"],
         urgent_alert_method="block",
         urgent_border=theme["palette0"]["alert"],
+        inactive=theme["palette1"]["accent1"],
         highlight_method="block",
         disable_drag=True,
         hide_unused=True,
         toggle=False,
         use_mouse_wheel=False,
         rounded=False,
+    ),
+    widget.Spacer(12),
+    widget.Prompt(
+        foreground=theme["palette1"]["accent2"],
+        cursor=False,
+        prompt=" ",
     ),
     widget.Spacer(),
     widget.CheckUpdates(
@@ -101,12 +102,5 @@ bar = Bar(
     widgets=widgets,
     size=32,
     border_color=theme["palette0"]["background"],
+    border_width=8,
 )
-
-match options["visuals"]["bar_position"]:
-    case "top":
-        bar.margin = [16, 16, 0, 16]
-    case "bottom":
-        bar.margin = [0, 16, 16, 16]
-    case _:
-        bar.margin = [16, 16, 0, 16]

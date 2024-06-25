@@ -9,12 +9,23 @@
   (setq catppuccin-flavor 'macchiato)
   (load-theme 'catppuccin :no-confirm))
 
-(use-package moody
+;;(use-package moody
+;;  :ensure t
+;;  :config
+;;  (moody-replace-mode-line-front-space)
+;;  (moody-replace-mode-line-buffer-identification)
+;;  (moody-replace-vc-mode))
+
+(use-package doom-modeline
   :ensure t
   :config
-  (moody-replace-mode-line-front-space)
-  (moody-replace-mode-line-buffer-identification)
-  (moody-replace-vc-mode))
+  (setq doom-modeline-height 48)
+  (setq doom-modeline-bar-width 6)
+  (setq doom-modeline-modal-icon nil)
+  (set-face-attribute 'doom-modeline-bar nil
+		      :background
+		      (face-attribute 'font-lock-function-name-face :foreground))
+  (doom-modeline-mode))
 
 (use-package which-key
   :ensure t
