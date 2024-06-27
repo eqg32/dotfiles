@@ -46,6 +46,13 @@ return {
 		config = true,
 	},
 	{
+		"akinsho/bufferline.nvim",
+		config = function()
+			require("bufferline").setup()
+			vim.keymap.set("n", "<M-t>", "<cmd>BufferLineCycleNext<cr>")
+		end,
+	},
+	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
@@ -73,8 +80,19 @@ return {
 					treesitter = true,
 				},
 			})
-			vim.cmd.colorscheme("catppuccin-macchiato")
+			-- vim.cmd.colorscheme("catppuccin-macchiato")
 		end,
+	},
+	{
+		"shaunsingh/nord.nvim",
+		priority = 1000,
+		config = function()
+			vim.cmd.colorscheme("nord")
+		end,
+	},
+	{
+		"sainnhe/everforest",
+		priority = 1000,
 	},
 	{
 		"stevearc/conform.nvim",

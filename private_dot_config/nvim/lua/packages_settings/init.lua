@@ -1,5 +1,5 @@
 return {
-	require("packages_settings.other_packages"),
+	require("packages_settings.other"),
 	require("packages_settings.alpha"),
 	require("packages_settings.lualine"),
 	require("packages_settings.mason"),

@@ -5,12 +5,12 @@ local wezterm = require("wezterm")
 local config = {
 
 	-- colour related
-	color_scheme = "Catppuccin Macchiato",
-	-- color_scheme = "Everforest Dark (Gogh)",
+	-- color_scheme = "Catppuccin Macchiato",
+	color_scheme = "nord",
 
 	-- font related
 	font = wezterm.font("Iosevka Nerd Font"),
-	font_size = 16.0,
+	font_size = 18.0,
 
 	-- window related
 	enable_tab_bar = false,

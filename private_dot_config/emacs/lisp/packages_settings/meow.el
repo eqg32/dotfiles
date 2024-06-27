@@ -96,3 +96,11 @@
   :config
   (meow-setup)
   (meow-global-mode))
+
+(use-package key-chord
+  :ensure t
+  :after meow
+  :config
+  (setq key-chord-two-keys-delay 0.5)
+  (key-chord-define meow-insert-state-keymap "jk" 'meow-normal-mode)
+  (key-chord-mode))

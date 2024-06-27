@@ -1,5 +1,5 @@
 [general]
-terminal = "alacritty"
+terminal = "wezterm"
 groups   = "1234567890qwetyuiop"
 layouts  = ["monadtall", "monadwide", "floating"]
 wmname   = "qtile"
@@ -18,6 +18,7 @@ left  = "h"
 [visuals]
 margin        = 16
 bar_position  = "bottom"
-theme         = "catppuccin"
+theme         = "nord"
 font          = "JetBrainsMono Nerd Font"
-wallpaper     = "~/.config/qtile/core/wallpapers/tux.svg"
+# wallpaper     = "~/wallpapers/ign_chainsaw-man.png"
+wallpaper     = "~/wallpapers/street_blues.png"

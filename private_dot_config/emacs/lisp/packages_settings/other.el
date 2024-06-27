@@ -6,15 +6,12 @@
 (use-package catppuccin-theme
   :ensure t
   :config
-  (setq catppuccin-flavor 'macchiato)
-  (load-theme 'catppuccin :no-confirm))
+  (setq catppuccin-flavor 'macchiato))
 
-;;(use-package moody
-;;  :ensure t
-;;  :config
-;;  (moody-replace-mode-line-front-space)
-;;  (moody-replace-mode-line-buffer-identification)
-;;  (moody-replace-vc-mode))
+(use-package doom-themes
+  :ensure t
+  :config
+  (load-theme 'doom-nord :no-confirm))
 
 (use-package doom-modeline
   :ensure t
@@ -99,7 +96,8 @@
   :hook ((prog-mode . rainbow-delimiters-mode)))
 
 (use-package indent-bars
-  :ensure (:host github :repo "jdtsmith/indent-bars")
+  :ensure (:host github
+	   :repo "jdtsmith/indent-bars")
   :hook ((prog-mode . indent-bars-mode)))
 
 (use-package quickrun
