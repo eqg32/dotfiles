@@ -67,6 +67,7 @@
      '("z" . meow-reverse)
      '("F" . scroll-up)
      '("Y" . scroll-down)
+     '("Z" . recenter-top-bottom)
      '("q" . other-window)
      '("Q" . meow-last-buffer)
      '(";" . meow-join)
@@ -91,8 +92,7 @@
      '(":" . meow-M-x)
      '("<delete>" . ignore)
      '("<escape>" . ignore)
-     '("<backspace>" . ignore)
-     ))
+     '("<backspace>" . ignore)))
   :config
   (meow-setup)
   (meow-global-mode))

@@ -16,9 +16,9 @@ right = "l"
 left  = "h"
 
 [visuals]
-margin        = 16
+margin        = 4
 bar_position  = "bottom"
 theme         = "nord"
 font          = "JetBrainsMono Nerd Font"
 # wallpaper     = "~/wallpapers/ign_chainsaw-man.png"
-wallpaper     = "~/wallpapers/street_blues.png"
+wallpaper     = "~/wallpapers/misty_mountains.jpg"
