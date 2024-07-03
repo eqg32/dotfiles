@@ -51,6 +51,7 @@
   "toggleterm.nvim": { "branch": "main", "commit": "fee58a0473fd92b28c34f8f724e4918b15ba30a3" },
   "venv-selector.nvim": { "branch": "regexp", "commit": "51e1b8cb557800dcb7a577c19815ebe3e222280a" },
   "vim-vsnip": { "branch": "master", "commit": "02a8e79295c9733434aab4e0e2b8c4b7cea9f3a9" },
+  "visual.nvim": { "branch": "main", "commit": "5eeb220b86cac7ff7041daf565ccf45f296bd107" },
   "which-key.nvim": { "branch": "main", "commit": "c1958e2529433ef096e924c72315733790ca7f88" },
   "windows.nvim": { "branch": "main", "commit": "c7492552b23d0ab30325e90b56066ec51242adc8" }
 }
