@@ -12,6 +12,7 @@
 					 (beacon . "beacon")))
     (setq meow-mode-state-list '((dired-mode . normal)
 				 (dashboard-mode . normal)
+				 (neotree-mode . normal)
 				 (term-mode . insert)))
     ;; (meow-setup-indicator)
     (meow-leader-define-key
@@ -91,6 +92,7 @@
      '("U" . undo-tree-redo)
      ;; other
      '(":" . meow-M-x)
+     '("T" . neotree-toggle)
      '("<delete>" . ignore)
      '("<escape>" . ignore)
      '("<backspace>" . ignore)))

@@ -58,6 +58,11 @@
   :config
   (selectrum-mode))
 
+(use-package neotree
+  :ensure t
+  :config
+  (setq neo-theme nil))
+
 ;; editing
 
 (use-package undo-tree
