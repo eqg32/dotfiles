@@ -10,6 +10,8 @@ return {
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "HiPhish/rainbow-delimiters.nvim" },
 	{ "m4xshen/autoclose.nvim", config = true },
+	{ "ggandor/flit.nvim", config = true },
+	{ "yutkat/confirm-quit.nvim", config = true },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", config = true },
 	{
 		"mawkler/modicator.nvim",
@@ -67,10 +69,6 @@ return {
 		config = function()
 			require("leap").create_default_mappings()
 		end,
-	},
-	{
-		"ggandor/flit.nvim",
-		config = true,
 	},
 	{
 		"catppuccin/nvim",
