@@ -65,12 +65,13 @@
      '("m" . meow-block)
      '("M" . meow-cancel-selection)
      '("z" . meow-reverse)
-     '("F" . scroll-up)
-     '("Y" . scroll-down)
-     '("Z" . recenter-top-bottom)
      '("q" . other-window)
      '("Q" . meow-last-buffer)
      '(";" . meow-join)
+     ;; scrolling 
+     '("F" . scroll-up)
+     '("Y" . scroll-down)
+     '("Z" . recenter-top-bottom)
      ;; editing
      '("i" . meow-insert)
      '("a" . meow-append)

@@ -19,6 +19,6 @@
 (menu-bar-mode -1) 
 
 ;; gui options
-(set-face-attribute 'default nil :font "Iosevka Nerd Font Mono" :height 180)
+(set-face-attribute 'default nil :font "CaskaydiaCove NF" :height 150)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)

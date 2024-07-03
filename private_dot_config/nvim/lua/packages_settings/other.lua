@@ -69,6 +69,10 @@ return {
 		end,
 	},
 	{
+		"ggandor/flit.nvim",
+		config = true,
+	},
+	{
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,

@@ -16,8 +16,7 @@
 (use-package doom-modeline
   :ensure t
   :config
-  (setq doom-modeline-height 48)
-  (setq doom-modeline-bar-width 6)
+  (setq doom-modeline-bar-width 4)
   (setq doom-modeline-modal-icon nil)
   (set-face-attribute 'doom-modeline-bar nil
 		      :background

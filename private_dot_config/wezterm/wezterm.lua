@@ -9,8 +9,8 @@ local config = {
 	color_scheme = "nord",
 
 	-- font related
-	font = wezterm.font("Iosevka Nerd Font"),
-	font_size = 18.0,
+	font = wezterm.font("CaskaydiaCove NF"),
+	font_size = 14.0,
 
 	-- window related
 	enable_tab_bar = false,
