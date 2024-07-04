@@ -19,8 +19,8 @@
   (setq doom-modeline-bar-width 4)
   (setq doom-modeline-modal-icon nil)
   (set-face-attribute 'doom-modeline-bar nil
-		      :background
-		      (face-attribute 'font-lock-function-name-face :foreground))
+    :background
+    (face-attribute 'font-lock-function-name-face :foreground))
   (doom-modeline-mode))
 
 (use-package which-key
@@ -38,14 +38,14 @@
   (setq dashboard-items '((recents . 5)
 			  (bookmarks . 5)))
   (set-face-attribute 'dashboard-banner-logo-title-face nil
-		      :foreground
-		      (face-attribute 'font-lock-function-name-face :foreground))
+    :foreground
+    (face-attribute 'font-lock-function-name-face :foreground))
   (set-face-attribute 'dashboard-heading-face nil
-		      :foreground
-		      (face-attribute 'font-lock-function-name-face :foreground))
+    :foreground
+    (face-attribute 'font-lock-function-name-face :foreground))
   (set-face-attribute 'dashboard-text-banner-face nil
-		      :foreground
-		      (face-attribute 'font-lock-function-name-face :foreground))
+    :foreground
+    (face-attribute 'font-lock-function-name-face :foreground))
   (dashboard-setup-startup-hook))
 
 (use-package ace-popup-menu
