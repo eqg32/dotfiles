@@ -13,15 +13,11 @@
   :config
   (load-theme 'doom-nord :no-confirm))
 
-(use-package doom-modeline
+(use-package mood-line
   :ensure t
   :config
-  (setq doom-modeline-bar-width 4)
-  (setq doom-modeline-modal-icon nil)
-  (set-face-attribute 'doom-modeline-bar nil
-    :background
-    (face-attribute 'font-lock-function-name-face :foreground))
-  (doom-modeline-mode))
+  (setq mood-line-glyph-alist mood-line-glyphs-unicode)
+  (mood-line-mode))
 
 (use-package which-key
   :ensure t

@@ -5,7 +5,7 @@ vim.opt.autoindent = true
 vim.opt.mouse = "v"
 vim.opt.mouse = "a"
 vim.opt.cursorline = true
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 8
 vim.opt.fixendofline = true
 vim.g.maplocalleader = ","
 
