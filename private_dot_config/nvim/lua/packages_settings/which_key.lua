@@ -14,7 +14,7 @@ return {
 					name = "toggle ...",
 					f = { "<cmd>NvimTreeToggle<cr>", "toggle file manager" },
 					t = { "<cmd>ToggleTerm<cr>", "toggle terminal" },
-					n = { "<cmd>Neogit<cr>", "toggle terminal" },
+					n = { "<cmd>Neogit<cr>", "toggle Neogit" },
 				},
 			},
 		})
