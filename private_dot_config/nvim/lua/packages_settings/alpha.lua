@@ -2,8 +2,8 @@ return {
 	"goolord/alpha-nvim",
 	config = function()
 		local alpha = require("alpha")
-		local startify = require("alpha.themes.startify")
-		startify.section.header.val = {
+		local theta = require("alpha.themes.theta")
+		theta.header.val = {
 			[[    ___       ___       ___            ___       ___       ___       ___       ___       ___   ]],
 			[[   /\__\     /\  \     /\  \          /\__\     /\  \     /\  \     /\__\     /\  \     /\__\  ]],
 			[[  /:| _|_   /::\  \    \:\  \        /:| _|_   /::\  \   /::\  \   /:/ _/_   _\:\  \   /::L_L_ ]],
@@ -14,6 +14,6 @@ return {
 			[[]],
 			[[nah, just kidding]],
 		}
-		alpha.setup(startify.config)
+		alpha.setup(theta.config)
 	end,
 }

@@ -6,4 +6,6 @@ return {
 	require("packages_settings.nvim_cmp"),
 	require("packages_settings.nvimtree"),
 	require("packages_settings.treesitter"),
+	require("packages_settings.which_key"),
+	-- require("packages_settings.hydra"),
 }

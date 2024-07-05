@@ -16,7 +16,7 @@ right = "l"
 left  = "h"
 
 [visuals]
-margin        = 0
+margin        = 4
 bar_position  = "bottom"
 theme         = "nord"
 font          = "JetBrainsMono Nerd Font"

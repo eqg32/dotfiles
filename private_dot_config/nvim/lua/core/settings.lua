@@ -7,6 +7,9 @@ vim.opt.mouse = "a"
 vim.opt.cursorline = true
 vim.opt.shiftwidth = 8
 vim.opt.fixendofline = true
+vim.opt.autochdir = true
+vim.opt.linespace = 5
+vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 
 if vim.g.neovide then

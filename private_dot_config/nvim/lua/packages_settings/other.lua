@@ -1,17 +1,18 @@
 return {
 	{ "stevearc/dressing.nvim", config = true },
-	{ "folke/which-key.nvim", config = true },
 	{ "abecodes/tabout.nvim", config = true },
 	{ "windwp/nvim-autopairs", config = true },
 	{ "smjonas/inc-rename.nvim", config = true },
 	{ "numToStr/Comment.nvim", config = true },
 	{ "stevearc/oil.nvim", config = true },
-	{ "folke/neodev.nvim", config = true },
+	{ "folke/lazydev.nvim", config = true },
 	{ "rose-pine/neovim", name = "rose-pine" },
 	{ "HiPhish/rainbow-delimiters.nvim" },
 	{ "m4xshen/autoclose.nvim", config = true },
 	{ "ggandor/flit.nvim", config = true },
 	{ "yutkat/confirm-quit.nvim", config = true },
+	{ "akinsho/bufferline.nvim", config = true },
+	{ "akinsho/toggleterm.nvim", config = true },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", config = true },
 	{
 		"mawkler/modicator.nvim",
@@ -46,13 +47,6 @@ return {
 			"nvim-telescope/telescope.nvim",
 		},
 		config = true,
-	},
-	{
-		"akinsho/bufferline.nvim",
-		config = function()
-			require("bufferline").setup()
-			vim.keymap.set("n", "<M-t>", "<cmd>BufferLineCycleNext<cr>")
-		end,
 	},
 	{
 		"nvim-telescope/telescope.nvim",
@@ -114,13 +108,6 @@ return {
 	{
 		"max397574/better-escape.nvim",
 		opts = { mapping = { "jk", "je" } },
-	},
-	{
-		"akinsho/toggleterm.nvim",
-		config = function()
-			require("toggleterm").setup()
-			vim.keymap.set("n", "<M-d>", "<cmd>ToggleTerm<cr>")
-		end,
 	},
 	{
 		"linux-cultist/venv-selector.nvim",
