@@ -42,6 +42,5 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<M-f>", "<cmd>NvimTreeToggle<cr>")
 	end,
 }

@@ -1,0 +1,156 @@
+include ~/.config/sway/core/colours
+
+# variables
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term wezterm
+set $menu bemenu-run --fn "CaskaydiaMono NF 12" --fb $background \
+			--ff $foreground --nb $background \
+			--nf $foreground --tb $background \
+			--hb $background --tf $foreground \
+			--hf $foreground --af $accent2 \
+			--ab $background --line-height 24 \
+			--prompt "run" --list 3 down \
+			--bottom
+
+# start a terminal
+bindsym $mod+Return exec $term
+
+# kill a window
+bindsym $mod+Shift+d kill
+
+# open launcher
+bindsym $mod+r exec $menu
+
+# floating
+floating_modifier $mod normal
+bindsym $mod+Shift+space floating toggle
+
+# reload config
+bindsym $mod+Ctrl+r reload
+
+# exit sway
+bindsym $mod+Shift+Ctrl+q exec swaymsg exit
+
+# movement
+
+# move focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# swap focus between floating and tiling
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# move the window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# workspaces
+
+# switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+
+# move a window to the another workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# layout
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# switch layout styles
+bindsym $mod+Ctrl+s layout stacking
+bindsym $mod+Ctrl+w layout tabbed
+bindsym $mod+Ctrl+e layout toggle split
+
+# fullscreen
+bindsym $mod+f fullscreen
+
+# move the window to the scratchpad
+bindsym $mod+Shift+s move scratchpad
+
+# show the window from the scratchpad
+bindsym $mod+s scratchpad show
+
+# resizing mode
+mode "resize" {
+    # grow or shrink
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+
+    # exit resizing mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+r mode "resize"
+
+# keyboard layouts
+
+input "type:keyboard" {
+	xkb_layout us,ru
+	xkb_options grp:alt_shift_toggle
+}
+
+# sound
+bindsym F1 exec pulsemixer --toggle-mute
+bindsym F2 exec pulsemixer --change-volume -5
+bindsym F3 exec pulsemixer --change-volume +5
+
+# brightness
+bindsym F5 exec brightnessctl s 5%-
+bindsym F6 exec brightnessctl s +5%
+
+# screenshots
+
+bindsym Print exec grimshot copy area
+
+# gestures
+
+# switch between workspaces
+bindgesture swipe:left workspace next
+bindgesture swipe:right workspace prev

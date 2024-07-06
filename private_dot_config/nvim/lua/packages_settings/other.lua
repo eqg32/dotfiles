@@ -13,6 +13,7 @@ return {
 	{ "yutkat/confirm-quit.nvim", config = true },
 	{ "akinsho/bufferline.nvim", config = true },
 	{ "akinsho/toggleterm.nvim", config = true },
+	{ "folke/which-key.nvim", config = true },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", config = true },
 	{
 		"mawkler/modicator.nvim",

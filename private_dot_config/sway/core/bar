@@ -1,0 +1,21 @@
+include ~/.config/sway/core/colours
+
+bar {
+    position bottom
+
+    status_command i3status-rs ~/.config/sway/i3st-rs.toml
+    font CaskaydiaMono NF 13
+    separator_symbol "/"
+    height 32
+    workspace_min_width 32
+
+    colors {
+        background $background
+        statusline $foreground
+	separator $active
+        focused_workspace $focused $focused $foreground
+        active_workspace $active $active $foreground
+        inactive_workspace $inactive $inactive $foreground
+        urgent_workspace $urgent $urgent $background
+    }
+}

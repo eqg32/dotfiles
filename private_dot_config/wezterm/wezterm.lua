@@ -7,10 +7,11 @@ local config = {
 	-- colour related
 	-- color_scheme = "Catppuccin Macchiato",
 	color_scheme = "nord",
+	window_background_opacity = 0.9,
 
 	-- font related
 	font = wezterm.font("CaskaydiaCove NF"),
-	font_size = 14.0,
+	font_size = 12.0,
 
 	-- window related
 	enable_tab_bar = false,
