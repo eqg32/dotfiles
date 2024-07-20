@@ -11,10 +11,10 @@ set $menu bemenu-run --fn "CaskaydiaMono NF 12" --fb $background \
 			--ff $foreground --nb $background \
 			--nf $foreground --tb $background \
 			--hb $background --tf $foreground \
-			--hf $foreground --af $accent2 \
-			--ab $background --line-height 24 \
-			--prompt "run" --list 3 down \
-			--bottom
+			--hf $accent4 --af $foreground \
+			--ab $background --line-height 32 \
+			--prompt "" --list 3 down \
+			--ch 20 --bottom --auto-select -n 
 
 # start a terminal
 bindsym $mod+Return exec $term
@@ -78,6 +78,15 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+bindsym $mod+q workspace q
+bindsym $mod+w workspace w
+bindsym $mod+e workspace e
+bindsym $mod+t workspace t
+bindsym $mod+y workspace y
+bindsym $mod+u workspace u
+bindsym $mod+i workspace i
+bindsym $mod+o workspace o
+bindsym $mod+p workspace p
 
 # move a window to the another workspace
 bindsym $mod+Shift+1 move container to workspace number 1
@@ -90,6 +99,15 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Shift+q move container to workspace q
+bindsym $mod+Shift+w move container to workspace w
+bindsym $mod+Shift+e move container to workspace e
+bindsym $mod+Shift+t move container to workspace t
+bindsym $mod+Shift+y move container to workspace y
+bindsym $mod+Shift+u move container to workspace u
+bindsym $mod+Shift+i move container to workspace i
+bindsym $mod+Shift+o move container to workspace o
+bindsym $mod+Shift+p move container to workspace p
 
 # layout
 
@@ -129,13 +147,6 @@ mode "resize" {
 }
 bindsym $mod+Shift+r mode "resize"
 
-# keyboard layouts
-
-input "type:keyboard" {
-	xkb_layout us,ru
-	xkb_options grp:alt_shift_toggle
-}
-
 # sound
 bindsym F1 exec pulsemixer --toggle-mute
 bindsym F2 exec pulsemixer --change-volume -5
@@ -154,3 +165,18 @@ bindsym Print exec grimshot copy area
 # switch between workspaces
 bindgesture swipe:left workspace next
 bindgesture swipe:right workspace prev
+
+# input configuration
+
+input "type:keyboard" {
+	xkb_layout us,ru
+	xkb_options grp:alt_shift_toggle,caps:ctrl_modifier
+}
+
+input "type:touchpad" {
+	tap enabled
+	dwt enabled
+	natural_scroll enabled
+	accel_profile "adaptive"
+	pointer_accel 0.2
+}

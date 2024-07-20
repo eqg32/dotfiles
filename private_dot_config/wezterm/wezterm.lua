@@ -15,6 +15,7 @@ local config = {
 
 	-- window related
 	enable_tab_bar = false,
+	enable_wayland = true,
 	animation_fps = 144,
 	max_fps = 144,
 

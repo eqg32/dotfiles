@@ -13,6 +13,9 @@ block = "backlight"
 device = "intel_backlight"
 
 [[block]]
+block = "temperature"
+
+[[block]]
 block = "cpu"
 
 [[block]]

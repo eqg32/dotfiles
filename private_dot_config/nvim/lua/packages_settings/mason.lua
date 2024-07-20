@@ -13,6 +13,7 @@ return {
 		lspconfig.pylsp.setup({ capabilities = capabilities })
 		lspconfig.gopls.setup({ capabilities = capabilities })
 		lspconfig.lua_ls.setup({ capabilities = capabilities })
+		lspconfig.clangd.setup({ capabilities = capabilities })
 		lspconfig.gleam.setup({ capabilities = capabilities })
 	end,
 }

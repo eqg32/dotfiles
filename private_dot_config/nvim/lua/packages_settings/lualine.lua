@@ -6,7 +6,7 @@ return {
 		options = {
 			-- section_separators = { left = "", right = "" },
 			section_separators = { left = "", right = "" },
-			component_separators = "┃",
+			component_separators = "│",
 		},
 		sections = {
 			lualine_b = {

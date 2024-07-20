@@ -12,7 +12,7 @@ return {
 	{ "ggandor/flit.nvim", config = true },
 	{ "yutkat/confirm-quit.nvim", config = true },
 	{ "akinsho/bufferline.nvim", config = true },
-	{ "akinsho/toggleterm.nvim", config = true },
+	{ "akinsho/toggleterm.nvim", opts = { direction = "float", float_opts = { border = "none" } } },
 	{ "folke/which-key.nvim", config = true },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", config = true },
 	{
@@ -105,10 +105,6 @@ return {
 				},
 			})
 		end,
-	},
-	{
-		"max397574/better-escape.nvim",
-		opts = { mapping = { "jk", "je" } },
 	},
 	{
 		"linux-cultist/venv-selector.nvim",

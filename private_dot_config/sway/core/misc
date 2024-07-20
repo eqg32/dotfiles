@@ -14,3 +14,4 @@ exec_always autotiling-rs
 
 # sound
 exec_always pulseaudio
+exec sleep 0.3 && swaymsg reload
