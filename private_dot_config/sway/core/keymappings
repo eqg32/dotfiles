@@ -14,7 +14,7 @@ set $menu bemenu-run --fn "CaskaydiaMono NF 12" --fb $background \
 			--hf $accent4 --af $foreground \
 			--ab $background --line-height 32 \
 			--prompt "" --list 3 down \
-			--ch 20 --bottom --auto-select -n 
+			--ch 20 --bottom -n 
 
 # start a terminal
 bindsym $mod+Return exec $term
