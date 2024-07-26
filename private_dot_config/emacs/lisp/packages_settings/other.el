@@ -11,6 +11,7 @@
 (use-package doom-themes
   :ensure t
   :config
+  (setq doom-themes-enable-bold nil)
   (load-theme 'doom-nord :no-confirm))
 
 (use-package mood-line

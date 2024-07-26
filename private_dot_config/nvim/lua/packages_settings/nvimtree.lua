@@ -7,7 +7,7 @@ return {
 				float = {
 					enable = true,
 					open_win_config = {
-						border = "none",
+						border = "single",
 						col = math.pow(2, 16),
 					},
 				},

@@ -12,7 +12,7 @@ return {
 	{ "ggandor/flit.nvim", config = true },
 	{ "yutkat/confirm-quit.nvim", config = true },
 	{ "akinsho/bufferline.nvim", config = true },
-	{ "akinsho/toggleterm.nvim", opts = { direction = "float", float_opts = { border = "none" } } },
+	{ "akinsho/toggleterm.nvim", opts = { direction = "float", float_opts = { border = "single" } } },
 	{ "folke/which-key.nvim", config = true },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", config = true },
 	{

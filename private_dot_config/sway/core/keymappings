@@ -6,7 +6,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term wezterm
+set $term kitty
 set $menu bemenu-run --fn "CaskaydiaMono NF 12" --fb $background \
 			--ff $foreground --nb $background \
 			--nf $foreground --tb $background \
@@ -153,8 +153,10 @@ bindsym F2 exec pulsemixer --change-volume -5
 bindsym F3 exec pulsemixer --change-volume +5
 
 # brightness
+bindsym F4 exec brightnessctl s 1%-
 bindsym F5 exec brightnessctl s 5%-
 bindsym F6 exec brightnessctl s +5%
+bindsym F7 exec brightnessctl s +1%
 
 # screenshots
 
@@ -178,5 +180,5 @@ input "type:touchpad" {
 	dwt enabled
 	natural_scroll enabled
 	accel_profile "adaptive"
-	pointer_accel 0.2
+	pointer_accel 0.24
 }

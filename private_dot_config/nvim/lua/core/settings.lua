@@ -33,5 +33,10 @@ if vim.g.neovide then
 	vim.g.neovide_cursor_vfx_mode = "sonicboom"
 	vim.g.neovide_cursor_smooth_blink = true
 	vim.g.neovide_transparency = 0.9
-	vim.g.transparency = 0.9
+	vim.g.neovide_padding_top = 16
+	vim.g.neovide_padding_bottom = 4
+	vim.g.neovide_padding_right = 16
+	vim.g.neovide_padding_left = 16
+	vim.g.neovide_hide_mouse_when_typing = true
+	vim.opt.linespace = 7
 end
