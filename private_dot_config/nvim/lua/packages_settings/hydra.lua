@@ -6,7 +6,7 @@ return {
 			name = "buffer actions",
 			mode = "n",
 			body = "<space>b",
-			config = { invoke_on_body = true, color = "red" },
+			config = { invoke_on_body = true, color = "pink" },
 			heads = {
 				{
 					"n",
