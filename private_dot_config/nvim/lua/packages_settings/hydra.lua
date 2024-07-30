@@ -9,32 +9,37 @@ return {
 			config = { invoke_on_body = true, color = "pink" },
 			heads = {
 				{
-					"n",
+					"l",
 					function()
 						vim.cmd("BufferLineCycleNext")
 					end,
 					{ desc = "next buffer" },
 				},
 				{
-					"p",
+					"h",
 					function()
 						vim.cmd("BufferLineCyclePrev")
 					end,
 					{ desc = "previous buffer" },
 				},
 				{
-					"g",
+					"k",
 					function()
 						vim.cmd("BufferLinePick")
 					end,
 					{ desc = "pick buffer" },
 				},
 				{
-					"c",
+					"j",
 					function()
 						vim.cmd("BufferLinePickClose")
 					end,
 					{ desc = "close buffer" },
+				},
+				{
+					"<esc>",
+					nil,
+					{ desc = "exit", exit = true },
 				},
 			},
 		})
@@ -43,7 +48,7 @@ return {
 			name = "actions",
 			mode = "n",
 			body = "<space>a",
-			config = { invoke_on_body = true, color = "blue" },
+			config = { invoke_on_body = true, color = "teal" },
 			heads = {
 				{
 					"f",
@@ -65,6 +70,11 @@ return {
 						vim.cmd("Neogit")
 					end,
 					{ desc = "open Neogit" },
+				},
+				{
+					"<esc>",
+					nil,
+					{ desc = "exit", exit = true },
 				},
 			},
 		})
