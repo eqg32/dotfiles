@@ -8,6 +8,7 @@ completion-trigger-len = 1
 bufferline             = "multiple"
 color-modes            = true
 true-color             = true
+popup-border           = "all"
 
 [editor.statusline]
 left                   = ["mode", "file-name", "spinner"]
@@ -30,9 +31,6 @@ select                 = "block"
 
 [editor.indent-guides]
 render                 = true
-
-[keys.normal]
-F1                     = ":w"
 
 [keys.insert]
 j                      = { k = "normal_mode" }

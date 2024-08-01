@@ -1,5 +1,5 @@
 [general]
-terminal = "wezterm"
+terminal = "kitty"
 groups   = "1234567890qwetyuiop"
 layouts  = ["monadtall", "monadwide", "floating"]
 wmname   = "qtile"
@@ -21,4 +21,4 @@ bar_position  = "bottom"
 theme         = "nord"
 font          = "JetBrainsMono Nerd Font"
 # wallpaper     = "~/wallpapers/ign_chainsaw-man.png"
-wallpaper     = "~/wallpapers/ign_chainsaw-man.png"
+wallpaper     = "~/wallpapers/street_blues.png"

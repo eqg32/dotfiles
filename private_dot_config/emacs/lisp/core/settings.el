@@ -19,7 +19,7 @@
 (menu-bar-mode -1) 
 
 ;; gui options
-(set-face-attribute 'default nil :font "CaskaydiaCove NF" :height 120)
+(set-face-attribute 'default nil :font "CaskaydiaCove NF" :height 140)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (set-frame-parameter nil 'alpha-background 90)

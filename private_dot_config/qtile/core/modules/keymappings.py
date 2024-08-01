@@ -42,8 +42,8 @@ keys = [
     Key([mod, "shift", "control"], "q", lazy.shutdown()),
     Key([mod], "space", lazy.next_layout()),
     Key(
-        [mod, "shift", "control"],
-        "space",
+        ["mod1"],
+        "Shift_L",
         lazy.widget["keyboardlayout"].next_keyboard(),
     ),
 ]
