@@ -11,7 +11,7 @@ true-color             = true
 popup-border           = "all"
 
 [editor.statusline]
-left                   = ["mode", "file-name", "spinner"]
+left                   = ["mode", "file-name", "file-modification-indicator", "spinner"]
 center                 = ["position", "position-percentage"]
 right                  = [
   "version-control",
