@@ -1,3 +1,3 @@
-require("core.packages")
+require("packages")
 require("core.settings")
 require("core.mappings")

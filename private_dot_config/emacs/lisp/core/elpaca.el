@@ -40,4 +40,4 @@
 (elpaca elpaca-use-package
   (elpaca-use-package-mode))
 
-(load-file "~/.config/emacs/lisp/packages_settings/init.el")
+(load-file "~/.config/emacs/lisp/packages/init.el")

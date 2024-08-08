@@ -14,36 +14,18 @@
   (setq doom-themes-enable-bold nil)
   (load-theme 'doom-nord :no-confirm))
 
-(use-package mood-line
+(use-package doom-modeline
   :ensure t
   :config
-  (setq mood-line-glyph-alist mood-line-glyphs-unicode)
-  (mood-line-mode))
+  (setq doom-modeline-modal-icon nil
+	doom-modeline-major-mode-icon nil)
+  (doom-modeline-mode))
 
 (use-package which-key
   :ensure t
   :config
   (which-key-setup-side-window-bottom)
   (which-key-mode))
-
-(use-package dashboard
-  :ensure t
-  :after meow
-  :config
-  (setq dashboard-startup-banner "~/.config/emacs/lisp/packages_settings/title.txt")
-  (setq dashboard-banner-logo-title "there is no way out of Bryansk")
-  (setq dashboard-items '((recents . 5)
-			  (bookmarks . 5)))
-  (set-face-attribute 'dashboard-banner-logo-title-face nil
-    :foreground
-    (face-attribute 'font-lock-function-name-face :foreground))
-  (set-face-attribute 'dashboard-heading-face nil
-    :foreground
-    (face-attribute 'font-lock-function-name-face :foreground))
-  (set-face-attribute 'dashboard-text-banner-face nil
-    :foreground
-    (face-attribute 'font-lock-function-name-face :foreground))
-  (dashboard-setup-startup-hook))
 
 (use-package ace-popup-menu
   :ensure t
@@ -99,7 +81,9 @@
 (use-package indent-bars
   :ensure (:host github
 	   :repo "jdtsmith/indent-bars")
-  :hook ((prog-mode . indent-bars-mode)))
+  :hook ((prog-mode . indent-bars-mode))
+  :config
+  (setq indent-bars-prefer-character t))
 
 (use-package quickrun
   :ensure t)
