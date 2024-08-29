@@ -1,6 +1,0 @@
-(load-file "~/.config/emacs/lisp/packages/other.el")
-(load-file "~/.config/emacs/lisp/packages/format-all.el")
-(load-file "~/.config/emacs/lisp/packages/sublimity.el")
-(load-file "~/.config/emacs/lisp/packages/corfu.el")
-(load-file "~/.config/emacs/lisp/packages/meow.el")
-(load-file "~/.config/emacs/lisp/packages/avy.el")

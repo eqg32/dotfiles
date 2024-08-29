@@ -1,4 +1,4 @@
-include ~/.config/sway/core/keymappings
-include ~/.config/sway/core/misc
-include ~/.config/sway/core/bar
-include ~/.config/sway/core/visuals
+include ~/.config/sway/conf.d/keymappings
+include ~/.config/sway/conf.d/misc
+include ~/.config/sway/conf.d/bar
+include ~/.config/sway/conf.d/visuals

@@ -9,6 +9,7 @@ vim.opt.mouse = "a"
 vim.g.mapleader = " "
 vim.g.maplocalleader = ","
 vim.opt.shiftwidth = 4
+vim.opt.scrolloff = 8
 
 -- setting shift width depending on the filetype
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
@@ -27,7 +28,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 
 -- neovide settings
 if vim.g.neovide then
-	vim.o.guifont = "CaskaydiaCove NF:h13"
+	vim.o.guifont = "Iosevka Nerd Font:h14"
 	vim.g.neovide_scale_factor = 1.0
 	vim.g.neovide_cursor_vfx_mode = "sonicboom"
 	vim.g.neovide_cursor_smooth_blink = true
@@ -37,5 +38,4 @@ if vim.g.neovide then
 	vim.g.neovide_padding_right = 16
 	vim.g.neovide_padding_left = 16
 	vim.g.neovide_hide_mouse_when_typing = true
-	vim.opt.linespace = 7
 end

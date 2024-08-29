@@ -14,7 +14,23 @@ return {
 	{ "akinsho/bufferline.nvim", config = true },
 	{ "akinsho/toggleterm.nvim", opts = { direction = "float", float_opts = { border = "single" } } },
 	{ "folke/which-key.nvim", config = true },
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", config = true },
+	{ "lewis6991/gitsigns.nvim", config = true },
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		config = function()
+			local ibl = require("ibl")
+			ibl.setup({
+				indent = { char = "│" },
+			})
+		end,
+	},
+	{ "nvim-neorg/neorg", opts = {
+		load = {
+			["core.defaults"] = {},
+			["core.concealer"] = {},
+		},
+	} },
 	{
 		"mawkler/modicator.nvim",
 		init = function()

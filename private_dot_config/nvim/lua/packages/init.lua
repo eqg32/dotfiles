@@ -20,4 +20,4 @@ require("lazy").setup({
 	require("packages.nvimtree"),
 	require("packages.treesitter"),
 	require("packages.hydra"),
-}, { install = { colorscheme = { "catppuccin-macchiato" } } })
+}, { install = { colorscheme = { "nord" } } })

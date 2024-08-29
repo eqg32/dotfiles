@@ -1,0 +1,35 @@
+# windows
+include ~/.config/sway/conf.d/colours
+
+default_border pixel 2
+default_floating_border pixel 2
+
+client.focused $focused $focused $focused $focused $focused
+client.focused_inactive $focused $focused $focused $focused $focused
+client.unfocused $unfocused $unfocused $unfocused $unfocused $unfocused
+client.urgent $urgent $urgent $urgent $urgent $urgent
+client.placeholder $unfocused $unfocused $unfocused $unfocused $unfocused
+
+# effects
+corner_radius 8
+gaps inner 8
+
+# blur
+blur on
+blur_xray off
+blur_passes 2
+blur_radius 5
+
+# shadows
+shadows on
+shadows_on_csd on
+shadow_blur_radius 16
+shadow_color #0000007F
+
+# dimming
+default_dim_inactive 0.2
+dim_inactive_colors.unfocused #000000FF
+dim_inactive_colors.urgent #900000FF
+
+# background
+output * bg "~/wallpapers/ign_chainsaw-man.png" fill

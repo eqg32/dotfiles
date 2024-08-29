@@ -72,6 +72,13 @@ return {
 					{ desc = "open Neogit" },
 				},
 				{
+					"t",
+					function()
+						vim.cmd("Telescope")
+					end,
+					{ desc = "open Telescope" },
+				},
+				{
 					"<esc>",
 					nil,
 					{ desc = "exit", exit = true },
