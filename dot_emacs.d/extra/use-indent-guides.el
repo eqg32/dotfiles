@@ -1,9 +1,5 @@
-(use-package indent-guide
+(use-package highlight-indent-guides
   :ensure t
+  :hook (prog-mode . highlight-indent-guides-mode)
   :config
-  (setq indent-guide-char "|")
-  (set-face-attribute
-   'indent-guide-face nil
-   :foreground (face-attribute
-		'font-lock-keyword-face :foreground))
-  (indent-guide-global-mode +1))
+  (setq highlight-indent-guides-method 'character))
