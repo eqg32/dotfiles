@@ -7,4 +7,4 @@
   (load-theme 'doom-nord :no-confirm)
   (set-face-attribute 'default nil
 		      :font "Iosevka Nerd Font"
-		      :height 160))
+		      :height 140))
