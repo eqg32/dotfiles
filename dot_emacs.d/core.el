@@ -49,7 +49,12 @@
 (use-package eglot
   :hook ((go-mode . eglot-ensure)
 	 (python-mode . eglot-ensure)
-	 (c-mode . eglot-ensure)))
+	 (c-mode . eglot-ensure)
+	 (c++-mode . eglot-ensure)))
+
+(use-package eldoc
+  :config
+  (setq eldoc-echo-area-use-multiline-p nil))
 
 ;; third-party packages
 
