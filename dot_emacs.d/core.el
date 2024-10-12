@@ -87,10 +87,11 @@
   :config
   (evil-commentary-mode +1))
 
-(use-package company
+(use-package corfu
   :ensure t
-  :init
-  (setq company-minimum-prefix-length 2)
   :config
-  (company-tng-mode +1)
-  (global-company-mode +1))
+  (setq corfu-auto t
+	corfu-cycle t
+	corfu-auto-prefix 2)
+  (define-key corfu-map (kbd "TAB") 'corfu-next)
+  (global-corfu-mode +1))
