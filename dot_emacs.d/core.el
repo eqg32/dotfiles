@@ -61,10 +61,10 @@
 (use-package gnu-elpa-keyring-update
   :ensure t)
 
-(use-package selectrum
+(use-package vertico
   :ensure t
   :config
-  (selectrum-mode +1))
+  (vertico-mode +1))
 
 (use-package evil
   :ensure t
