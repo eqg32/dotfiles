@@ -92,6 +92,7 @@
   :config
   (setq corfu-auto t
 	corfu-cycle t
+	corfu-preselect 'prompt
 	corfu-auto-prefix 2)
   (define-key corfu-map (kbd "TAB") 'corfu-next)
   (global-corfu-mode +1))
