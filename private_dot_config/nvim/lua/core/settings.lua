@@ -28,7 +28,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 
 -- neovide settings
 if vim.g.neovide then
-	vim.o.guifont = "Iosevka Nerd Font:h14"
+	vim.o.guifont = "FiraCode Nerd Font:h12"
 	vim.g.neovide_scale_factor = 1.0
 	vim.g.neovide_cursor_vfx_mode = "sonicboom"
 	vim.g.neovide_cursor_smooth_blink = true
