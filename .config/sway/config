@@ -47,18 +47,18 @@ workspace_layout tabbed
 seat seat0 xcursor_theme Bibata-Modern-Ice
 
 # Borders
-font                      Iosevka Nerd Font 12
+font                      Iosevka Nerd Font 8
 default_border            pixel 2
 default_floating_border   pixel 2
 hide_edge_borders         smart
 titlebar_padding          8 1 
 
 # Client Colors
-client.focused           $color3   $color3   $foreground   $color3   $color3
-client.focused_inactive  $color1   $color1   $background   $color1   $color1
-client.unfocused         $color1   $color1   $background   $color1   $color1
-client.urgent            $color3   $color3   $background   $color3   $color3
-client.placeholder       $color1   $color1   $background   $color1   $color1
+client.focused           $color3   $color3   $color3   $color3   $color3
+client.focused_inactive  $color1   $color1   $color1   $color1   $color1
+client.unfocused         $color1   $color1   $color1   $color1   $color1
+client.urgent            $color3   $color3   $color3   $color3   $color3
+client.placeholder       $color1   $color1   $color1   $color1   $color1
 
 # Gaps
 # gaps       outer 8
@@ -82,6 +82,7 @@ blur_radius 5
 
 # Dimming Effects
 default_dim_inactive 0.1
+for_window [floating] dim_inactive 0.0
 dim_inactive_colors.unfocused #000000FF
 dim_inactive_colors.urgent #900000FF
 
@@ -258,7 +259,7 @@ bindgesture {
 
 input "type:keyboard" {
     xkb_layout   us,ru
-    xkb_options  grp:win_space_toggle,caps:ctrl_modifier
+    xkb_options  grp:rctrl_toggle,caps:ctrl_modifier
 }
 
 input "type:touchpad" {
