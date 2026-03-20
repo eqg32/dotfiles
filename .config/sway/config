@@ -162,8 +162,10 @@ bindsym {
     $mod+Up           focus up
     $mod+Right        focus right
     
-    $mod+space        focus mode_toggle
-    $mod+a            focus parent
+    $mod+Space        focus mode_toggle
+    $mod+A            focus parent
+
+    $mod+Tab	      focus next
 }
 
 # Window Movement
@@ -218,7 +220,7 @@ bindsym {
 
 # Layout Operations
 bindsym {
-    $mod+v            splitt
+    $mod+v            split
     $mod+Ctrl+e       layout toggle split
     $mod+f            fullscreen
     $mod+Shift+s      move scratchpad
