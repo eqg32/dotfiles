@@ -47,18 +47,18 @@ workspace_layout tabbed
 seat seat0 xcursor_theme Bibata-Modern-Ice
 
 # Borders
-font                      Iosevka Nerd Font 8
+font                      Iosevka Nerd Font Medium 12
 default_border            pixel 2
 default_floating_border   pixel 2
 hide_edge_borders         smart
 titlebar_padding          8 1 
 
 # Client Colors
-client.focused           $color3   $color3   $color3   $color3   $color3
-client.focused_inactive  $color1   $color1   $color1   $color1   $color1
-client.unfocused         $color1   $color1   $color1   $color1   $color1
-client.urgent            $color3   $color3   $color3   $color3   $color3
-client.placeholder       $color1   $color1   $color1   $color1   $color1
+client.focused           $foreground   $foreground   $background   $foreground   $foreground
+client.focused_inactive  $background   $background   $foreground   $background   $background
+client.unfocused         $background   $background   $foreground   $background   $background
+client.urgent            $foreground   $foreground   $background   $foreground   $foreground
+client.placeholder       $background   $background   $foreground   $background   $background
 
 # Gaps
 # gaps       outer 8
@@ -114,7 +114,7 @@ set $up      k
 set $right   l
 
 set $term    alacritty
-set $browser zen.appimage
+set $browser librewolf.appimage
 set $menu    bemenu-run \
     --fn "Iosevka Nerd Font Medium 13" \
     --fb "$background" \
@@ -185,7 +185,6 @@ bindsym {
 bindsym {
     # Switch workspace
     $mod+1            workspace number 1
-    $mod+2            workspace number 2
     $mod+3            workspace number 3
     $mod+4            workspace number 4
     $mod+5            workspace number 5
@@ -202,7 +201,6 @@ bindsym {
     
     # Move to workspace
     $mod+Shift+1      move container to workspace number 1
-    $mod+Shift+2      move container to workspace number 2
     $mod+Shift+3      move container to workspace number 3
     $mod+Shift+4      move container to workspace number 4
     $mod+Shift+5      move container to workspace number 5
