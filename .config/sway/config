@@ -47,7 +47,7 @@ workspace_layout tabbed
 seat seat0 xcursor_theme Bibata-Modern-Ice
 
 # Borders
-font                      Iosevka Nerd Font Medium 12
+font                      Iosevka Nerd Font 12
 default_border            pixel 2
 default_floating_border   pixel 2
 hide_edge_borders         smart
@@ -114,7 +114,7 @@ set $up      k
 set $right   l
 
 set $term    alacritty
-set $browser librewolf.appimage
+set $browser librewolf
 set $menu    bemenu-run \
     --fn "Iosevka Nerd Font Medium 13" \
     --fb "$background" \
