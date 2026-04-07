@@ -69,16 +69,17 @@
 
 ;; Dired
 
-(defun dired-filter ()
-  "Filter files by regexp."
-  (interactive)
-  (dired-unmark-all-marks)
-  (revert-buffer)
-  (call-interactively 'dired-mark-files-regexp)
-  (dired-toggle-marks)
-  (dired-do-kill-lines))
+(with-eval-after-load 'dired
+  (defun dired-filter ()
+    "Filter files by regexp."
+    (interactive)
+    (dired-unmark-all-marks)
+    (revert-buffer)
+    (call-interactively 'dired-mark-files-regexp)
+    (dired-toggle-marks)
+    (dired-do-kill-lines))
 
-(define-key dired-mode-map (kbd "C-c f") 'dired-filter)
+  (define-key dired-mode-map (kbd "C-c f") 'dired-filter))
 
 (provide 'scripts)
 

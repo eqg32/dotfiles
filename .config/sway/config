@@ -97,8 +97,8 @@ output * bg $wallpaper fill
 exec          brightnessctl s 20%
 exec_always   emacs --daemon
 exec_always   dbus-run-session pulseaudio
-exec_always   dbus-run-session mako
 exec_always   dbus-run-session udiskie 
+exec_always   mako
 exec_always   mpd
 
 
