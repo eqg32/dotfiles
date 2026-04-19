@@ -152,7 +152,7 @@
 
 (use-package org
   :custom
-  (org-agenda-files '("~/Org/notes.org" "~/Org/todo.org")))
+  (org-agenda-files '("~/org/notes.org" "~/org/todo.org")))
 
 (use-package cus-edit
   :custom
