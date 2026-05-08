@@ -110,7 +110,11 @@
   :config (electric-pair-mode 1))
 
 (use-package eglot
-  :hook ((go-mode python-ts-mode c-mode c++-mode) . eglot-ensure))
+  :hook ((go-mode python-ts-mode c-mode c++-mode) . eglot-ensure)
+  :config
+  (add-to-list
+   'eglot-server-programs
+   '((python-mode python-ts-mode) "ty" "server")))
 
 (use-package simple
   :hook ((prog-mode . column-number-mode)

@@ -134,6 +134,8 @@ movement keys.  Else do nothing."
 		("v i" . ibuffer)
 		("v o" . other-window)
 		("v w" . delete-other-windows)
+		("v s" . isearch-forward)
+		("v r" . isearch-backward)
 		("v e a" . eglot-code-actions)
 		("v e r" . eglot-rename)
 		("v e R" . xref-find-references)
